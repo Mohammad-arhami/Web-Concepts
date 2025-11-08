@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>HTML</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Css_files/HTML.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../Images_files/code-to-img.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="nav-container" id="jump-top">
+        <div class="title-container">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="list-container">
+            <ul>
+                <li><a href="../Html_files/F&B-END.html">Front & Back End</a></li>
+                <li><a href="../Html_files/UI-UX.html">Ui & Ux</a></li>
+                <li><a href="#">Html</a></li>
+                <li><a href="../Html_files/CSS.html">Css</a></li>
+                <li><a href="../Html_files/JS.html">Java Script</a></li>
+
+            </ul>
+        </div>
+
+        <div class="icon-container">
+                <button class="themBtn"><img src="../Images_files/moon.jpg" class="dark" width="45px" alt=""><span>Dark Mode</span></button>
+        </div>
+    </div>
+
+
+
+    <!-- sidebar -- content list -->
+    <div class="sidebar-container">
+        <div class="content-list-container">
+            <h1 class="h1_table">Table of contents</h1>
+            <ul>
+                <li><a href="#intro-jump">Introduction<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#languages-jump">languages<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#history-jump">History<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#html-works-jump">Html Works<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#mini-part-jump">Most Used<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#inline-block-jump">Inline & Block<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#pros-cons-jump">Pros & Cons<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#languages-relation-jump">Communication...<i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li><a href="#conclusion-jump">Conclusion<i class="material-icons">keyboard_arrow_right</i></a></li>
+            </ul>
+        </div>
+
+        <div class="img-container">
+            <div class="img-content"></div>
+            <p class="p_table">Article Refrence <br> <a
+                    href="https://www.hostinger.com/tutorials/what-is-html#How_Are_HTML_CSS_and_Javascript_Related">hostinger</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Introduction section -->
+    <div class="intro-container" id="intro-jump">
+        <div class="intro-content">
+            <h1 class="intro-h1">Introduction</h1>
+            <p class="intro-p">Hypertext Markup Language <a href="HTML.html"> (HTML) </a> is the standard markup language for documents
+                designed to be displayed in a web browser. It defines the content and structure of web content. It is
+                often assisted by technologies such as Cascading Style Sheets <a href="../Html_files/CSS.html"> (CSS)
+                </a> and scripting languages such as <a href="../Html_files/JS.html">(JavaScript)</a> .</p>
+            <a href="" class="button" id="bubleBtn">Learn More
+                <span></span><span></span><span></span><span></span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- chapter 1 languages -->
+    <div class="chapter-1-container" id="languages-jump">
+        <h1 class="title-chapter1">Difference Between Scripting , Programming & Markup Languages</h1>
+        <div class="text-container-chapter1">
+            <h1>Scripting Language</h1>
+            <p>A script is basically a programming language in which compilation steps are not mandatory to run the
+                program. Script languages are like subdomains of programming that are used to provide guidance to other
+                programs or we can use them to control other programs, so it also contains instructions. this technique
+                is never standalone because it is used to connect a programming language to another which is an
+                important step. The scripting process does not need a specific compiling process but it requires to be
+                interpreted (Scanning the script by line number instead of compiling). This technique is used to combine
+                existing components where scripts are running inside another program or creating dependencies. Low
+                maintenance scripting languages are PHP, JavaScript, and VBScript, etc.</p>
+        </div>
+
+        <div class="text-container-chapter1">
+            <h1>Programming Language</h1>
+            <p>Programming languages are compiler-based languages are developed from scratch and that run independently
+                as compared to scripting languages. In programming, a set of instructions or code tells an operation to
+                be performed. In programming, a logical structure and generic statements are provided, and a definite
+                set of input instructions will perform output. These given instructions are always written in a
+                human-readable language and here the compiler comes into the picture where these languages are converted
+                to binary format or also known as machine language (language to be understood by the computers). These
+                concepts are completely different from the scripting language as explained before.
+                <br><br>
+                Examples of Programming languages include C, C++, C#, Java, etc. These languages support modern hardware
+                and compilation techniques.
+                Other Languages like Python sit in both programming and scripting types because many coders use this
+                language without a compilation step, but the central part of implementing the python must require a
+                compilation, and only after that it can be run in the bytecode.
+            </p>
+        </div>
+
+        <div class="text-container-chapter1">
+            <h1>Markup Language</h1>
+            <p>Markup languages are also languages, but we can't say that markup languages contain programming
+                fundamentals, because these languages are not to be executed or used to perform such actions, moreover,
+                these markups can be used in the data structure, data identifying, or presenting data in required cases.
+                <br><br>
+                Examples of markup languages are HTML (Hyper-text Markup Language), XHTML (same with HTML but with some
+                differences), XML (for data structuring), etc. Markup languages are completely different from
+                programming languages and scripting languages, and these markups do not contain any systematic logic or
+                algorithm.
+            </p>
+        </div>
+
+        <div class="text-container-chapter1">
+            <h1>Note :</h1>
+            <p>All the scripting languages are subdomains of programming languages but all the programming languages are
+                not scripting languages. C++ can never be said to be a scripting language because it contains logical
+                techniques, so it's just a programming language but we can say JavaScript programming or scripting
+                languages because it contains both. Scripting languages usually show slow behavior than programming
+                languages because compiled programs are converted into machine language first.</p>
+        </div>
+
+        <div class="text-container-chapter1">
+            <div class="column-container">
+                <h3>Scripting Language</h3>
+                <div class="specific_p">
+                    <p>JavaScript</p>
+                    <p>Php</p>
+                    <p>Perl</p>
+                    <p>VBScript</p>
+                </div>
+                <span></span>
+            </div>
+            <div class="column-container">
+                <h3>Programming language</h3>
+                <div class="specific_p">
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>C#</p>
+                    <p>Java</p>
+                </div>
+                <span></span>
+            </div>
+            <div class="column-container">
+                <h3>Markup Languages</h3>
+                <div class="specific_p">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>XML</p>
+                </div>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- chapter 2 languages -->
+    <div class="chapter-2-container" id="history-jump">
+        <h1 class="title">History</h1>
+        <div class="paragraph-container">
+            <p>
+                HTML was created by Sir Tim Berners-Lee in late 1991 but was not officially released. It was published in 1995 as HTML 2.0. HTML 4.01 was published in late 1999 and was a major version of HTML.</p>
+            <p>HTML is a very evolving markup language and has evolved with various versions updating. Long before its revised standards and specifications are carried in, each version has allowed its user to create web pages in a much easier and prettier way and make sites very efficient.</p>
+        </div>
+        <div class="version-container">
+            <div class="content">
+                <span></span>
+                <p>HTML 1.0 was released in 1993 with the intention of sharing information that can be readable and accessible via web browsers. But not many of the developers were involved in creating websites. So the language was also not growing.</p>
+            </div>
+            <div class="content">
+                <span></span>
+                <p>Then comes HTML 2.0, published in 1995, which contains all the features of HTML 1.0 along with a few additional features, which remained the standard markup language for designing and creating websites until January 1997 and refined various core features of HTML.</p>
+            </div>
+            <div class="content">
+                <span></span>
+                <p>Then comes HTML 3.0, where Dave Raggett introduced a fresh paper or draft on HTML. It included improved new features of HTML, giving more powerful characteristics for webmasters in designing web pages. But these powerful features of the new HTML slowed down the browser in applying further improvements.</p>
+            </div>
+            <div class="content">
+                <span></span>
+                <p>Then comes HTML 4.01, which is widely used and was a successful version of HTML before HTML 5.0, which is currently released and used worldwide. HTML 5 can be said for an extended version of HTML 4.01, which was published in the year 2012.</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- chapter 3 Html Works -->
+    <div class="chapter-3-container" id="html-works-jump">
+        <div class="title-container">
+            <h1 class="front-title">How Does HTML Work</h1>
+            <h1 class="back-title">How Does HTML Work</h1>
+        </div>
+        <div class="explain-container">
+            <p>The average website includes several different HTML pages. For instance, a home page, an about page, and a contact page would all have separate HTML files.
+               HTML documents are files that end with a .html or .htm extension. A web browser reads the HTML file and renders its content so that internet users can view it.
+                <br><br>
+                All HTML pages have a ments, consisting of a set of tags and attributes. HTML elements are the building blocks of a web page. A tag tells the web browser where an element begins and ends, whereas an attribute describes the characteristics of an element. 
+            </p>
+        </div>
+        <div class="element-parts-container">
+            <h3>The three main parts of an element are: </h3>
+            <div>
+                <span></span>
+                <p><b> Opening tag : </b> used to state where an element starts to take effect . The tag is wrapped with opening and closing angle brackets . For example , use the start tag &quot; &lt; p &gt; &quot; to create a paragraph. </p>
+            </div>
+            <div>
+                <span></span>
+                <p><b> Content : </b> this is the output that other users see. </p>
+            </div>
+            <div>
+                <span></span>
+                <p><b> Closing tag : </b> the same as the opening tag, but with a forward slash before the element name. For example, &quot; &lt; p &gt; &quot; to end a paragraph. </p>
+            </div>
+        </div>
+
+
+        <div class="explanation-element-parts-container">
+            <p>The combination of these three parts will create an HTML element:</p>
+            <pre class="language-html"><code class="language-html"><span><span><span>&lt;</span>p</span><span>&gt;</span></span>This is how you add a paragraph in HTML.<span><span><span>&lt;/</span>p</span><span>&gt;</span></span></code></pre>
+            <p>Another critical part of an HTML element is its attribute, which has two sections – a name and attribute value. The name identifies the additional information that a user wants to add, while the attribute value gives further specifications. </p>
+            <p>For example, a style element adding the color purple and the font-family verdana will look like this:</p>
+            <pre class="language-html"><code class="language-html"><span><span><span>&lt;</span>p style=<span class="blue">"color:purple;font-family:verdana"</span> </span><span>&gt;</span></span>This is how you add a paragraph in HTML.<span><span><span>&lt;/</span>p</span><span>&gt;</span></span></code></pre>
+            <p>Another attribute, the HTML class, is most important for development and programming. The class attribute adds style information that can work on different elements with the same class value. </p>
+            <p>For example, we will use the same style for a heading  &nbsp;&lt; h1 &gt;&nbsp; and a paragraph &nbsp;&lt; p &gt;&nbsp; The style includes background color, text color, border, margin, and padding, under the class .important. To achieve the same style between &nbsp;&lt; h1 &gt;&nbsp; and &nbsp;&lt; p &gt;&nbsp; , add &nbsp; <span class="blue"> class = " important " </span> after each start tag: </p>
+
+
+            <div class="class-explanation">
+                &lt; html &gt;<br>
+                &lt; head &gt;<br>
+                &lt; style &gt;<br>
+                .important {<br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; background-color: blue;<br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; color: white;<br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; border: 2px solid black;<br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; margin: 2px;<br>
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; padding: 2px;<br>
+                } <br>
+                &lt; / style &gt;<br>
+                &lt; / head &gt;<br>
+                &lt; body &gt;<br>
+                <br>
+                &lt; h1 &nbsp; <span class="blue"> class="important" </span> &gt; This is a heading  &lt; / h1  &gt;<br>
+                &lt; p &nbsp; <span class="blue"> class="important" </span> &gt;   This is a paragraph.  &lt; / p &gt;<br>
+                <br>
+                &lt; / body &gt;<br>
+                &lt; / html &gt;
+            </div>
+
+            <p>Most elements have an opening and a closing tag, but some elements do not need closing tags to work, such as empty elements. These elements do not use an end tag because they do not have content:</p>
+            <pre class="language-html"><code class="language-html"><span><span>&lt;</span>img src= <span class="blue"> "/" </span>alt= <span class="blue">"Image"</span></span>&gt;</code></pre>
+            <p>This image tag has two attributes – an <span>&nbsp; src &nbsp;</span> attribute, the image path, and an <span>&nbsp; alt &nbsp;</span> attribute, the descriptive text. However, it does not have content nor an end tag. </p>
+            <p>Lastly, every HTML document must start with a <span>&nbsp; &lt; !DOCTYPE &gt;&nbsp; </span> declaration to inform the web browser about the document type. With HTML5, the doctype HTML public declaration will be:</p>
+            <pre class="language-html"><code class="language-html">&lt; !DOCTYPE &gt;</code></pre>
+        </div>
+    </div>
+
+
+    <!-- mini part most use tags -->
+    <div class="mini-part-container" id="mini-part-jump">
+        <div class="mini-part-content">
+            <div class="animation-container">
+                <h1>Most Used</h1>
+                <section class="animation-content">
+                    <div class="first">HTML Tags</div>
+                    <div class="second">HTML Elements</div>
+                </section>
+            </div>
+            <p>Currently, there are 142 HTML tags available that allow for the <a href="https://www.hostinger.com/tutorials/what-is-html" target="_blank"> creation of various elements.</a> Even though modern browsers no longer support some of these tags, learning all the different elements available is still beneficial</p>
+            <p>This section will discuss the most-used HTML tags and two main elements – block-level elements and inline elements. </p>
+        </div>
+    </div>
+
+
+    <!-- chapter 4 Inline & Block Element -->
+    <div class="chapter-4-container" id="inline-block-jump">
+        
+        <!-- Typewriter Animation -->
+        <h1 class="title cursor typewriter-animation">Inline And Block Elements <img src="../HTML-Images_file/course-icon.png" width="50px" style="transform: translateY(10px);"  alt=""> .... </h1>
+        
+        <div class="inline-element-container">
+            <h1>Inline Elements</h1>
+            <p>An inline element formats the inner content of block-level elements, such as adding links and emphasized strings. Inline elements are most commonly used to format text without breaking the flow of the content. </p>
+            <p>For example, a  &nbsp;&lt; strong &gt;&nbsp; tag would render an element in bold, whereas the &nbsp;&lt; em &gt;&nbsp; tag would show it in italics. <a href="https://www.hostinger.com/tutorials/how-to-create-hyperlink">Hyperlinks</a> are also inline elements that use an &nbsp;&lt; a &gt;&nbsp; tag and an href attribute to indicate the link’s destination:</p>
+            <pre class="language-html"><code class="language-html"><span><span><span>&lt;</span>a href=<span class="blue">"https://example.com/"</span> </span><span>&gt;</span></span>Click me!<span><span><span>&lt;/</span>a</span><span>&gt;</span></span></code></pre>
+        </div>
+        
+        <div class="block-element-container">
+            <h1>Block Elements</h1>
+            <p>A block-level element takes up the entire width of a page. It always starts a new line in the document. For example, a heading element will be in a separate line from a paragraph element.</p>
+            <div class="list-container">
+                <h3>Every HTML page uses these three tags:</h3>
+                <div>
+                    <span></span>
+                    <p><b>  &nbsp;&lt; html &gt;&nbsp; : </b> tag is the root element that defines the whole HTML document.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p><b> &nbsp;&lt; head &gt;&nbsp; : </b> tag holds meta information such as the page’s title and charset.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p><b> &nbsp;&lt; body &gt;&nbsp; : </b> tag encloses all the content that appears on the page.</p>
+                </div>
+            </div>
+
+            <div class="class-explanation">
+                &lt; html &gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; head &gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; !-- &nbsp; META &nbsp; INFORMATION &nbsp; --&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; / head &gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; body &gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; !-- &nbsp; PAGE &nbsp; CONTENT &nbsp; --&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; / body &gt;<br>
+                &lt; / html &gt;
+            </div>
+
+            <div class="list-container">
+                <h3>Other popular block-level tags include:</h3>
+                <div>
+                    <span></span>
+                    <p> Heading tags – these range from <b>&lt;h1&gt;</b> to <b>&lt;h6&gt;</b> , where heading h1 is largest in size, getting smaller as they move up to h6. </p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Paragraph tags – are all enclosed by using the <b>&lt;p&gt;</b> tag.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>List tags – have different variations. Use the <b>&lt;ol&gt;</b> tag for an ordered list, and use <b>&lt;ul&gt;</b> for an unordered list. Then, enclose individual list items using the <b>&lt;li&gt;</b> tag. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- chapter 5 Pros and Cons -->
+    <div class="chapter-5-container" id="pros-cons-jump">
+        <h1 class="title">Pros and Cons of HTML</h1>
+        <p class="paragraph">Just like any other computer language, HTML has its strengths and limitations. <br> Here are the pros and cons of HTML:</p>
+        <div class="pros-container">
+            <div class="list-container-5">
+                <h3>Pros</h3>
+                <div>
+                    <span></span>
+                    <p>Beginner-friendly. HTML has a clean and consistent markup, as well as a shallow learning curve.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Support. The language is widely used, with a lot of resources and a large community behind it.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Accessible. It is open-source and completely free. HTML runs natively in all web browsers.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Flexible. HTML is easily integrable with backend languages such as <a href="https://www.hostinger.com/tutorials/php" style="color: rgb(0, 60, 255);">PHP</a> and <a href="https://www.hostinger.com/tutorials/what-is-node-js" style="color: rgb(0, 60, 255);"> Node.js.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cons-container">
+            <div class="list-container-5">
+                <h3>Cons</h3>
+                <div>
+                    <span></span>
+                    <p>Static. The language is primarily used for <a href="https://www.hostinger.com/tutorials/static-website/" style="color: rgb(0, 60, 255);">static websites.</a> For dynamic functionality, you may need to use JavaScript or a back-end language such as PHP.</p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Separate HTML page. Users have to create individual web pages for HTML, even if the elements are the same. </p>
+                </div>
+                <div>
+                    <span></span>
+                    <p>Browser compatibility. Some browsers adopt new features slowly. Sometimes older browsers don’t always render newer tags.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- chapter 6 Languages Relation -->
+    <div class="chapter-6-container" id="languages-relation-jump">
+        <h1 class="title">How Are HTML, CSS, and Javascript <br> Related</h1>
+        <div class="chapter6-content">
+            <p>HTML is used to add text elements and create the structure of content. However, it is not enough to build a professional and fully responsive website. So, HTML needs the help of <a href=""> Cascading Style Sheets (CSS) </a> and <a href=""> JavaScript</a> to create the vast majority of website content. </p>
+            <p>CSS is responsible for stylings such as background, colors, layouts, spacing, and animations. On the other hand, JavaScript adds dynamic functionality such as sliders, pop-ups, and photo galleries. These three languages are the fundamentals of front-end development.</p>
+        </div>
+    </div>
+
+    <!-- chapter 7 Conclusion -->
+    <div class="chapter-7-container" id="conclusion-jump">
+        <h1 class="title">Conclusion</h1>
+        <div class="text-container">
+            <p>HTML is the primary markup language found on the internet. Every HTML page has a series of elements that create the content structure of a web page or application.</p>
+            <p>HTML is a beginner-friendly language with plenty of support and is mainly used for static website pages. HTML works best together with CSS for styling and JavaScript for functionality. You can check out how to link CSS and HTML on our blog.</p>
+            <p>We have also shown you some of the top courses available online that will either help to improve your knowledge of HTML or provide a basic understanding of it.</p>
+            <p>Let us know in the comment section if you have any other favorite resources to learn HTML with. Good luck.</p>
+        </div>
+    </div>
+
+    <script src="../JavaScript_files/HTML.js"></script>
+
+</body>
+
+</html>    

@@ -1,0 +1,1301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "biyekan";
+  src: url(../Font_files/transfonter.org-20230716-122746/BYekan.eot)
+      format("embedded-opentype"),
+    url(../Font_files/transfonter.org-20230716-122746/BYekan.ttf)
+      format("truetype"),
+    url(../Font_files/transfonter.org-20230716-122746/BYekan.woff)
+      format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  font-family: biyekan;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* navigation bar */
+
+.nav-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  background-color: black;
+}
+
+.nav-container .title-container {
+  width: 315px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container h3 {
+  font-size: 24px;
+  color: whitesmoke;
+  font-family: biyekan;
+  background: linear-gradient(
+    110deg,
+    rgba(0, 174, 255),
+    rgb(183, 0, 255) 33%,
+    rgb(255, 0, 149) 66%,
+    rgb(255, 174, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.nav-container .list-container {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: biyekan;
+}
+
+.nav-container ul li {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 20px;
+}
+
+.nav-container ul li a {
+  display: inline-block;
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-container ul li a:hover {
+  transform: translateY(-5px);
+}
+
+.nav-container .icon-container {
+  width: 315px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container .icon-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-container .icon-container button span{
+  margin-top: 5px;
+  color: rgb(245, 245, 245);
+}
+
+
+/* side-bar -- content list */
+
+.sidebar-container {
+  width: 24%;
+  height: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.sidebar-container .content-list-container {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.sidebar-container h1 {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.content-list-container ul {
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  padding-left: 65px;
+  list-style-type: none;
+}
+
+.content-list-container ul li {
+  font-size: 16px;
+  margin: 1px 0;
+}
+
+.content-list-container ul li a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  padding-left: 8px;
+  border-left: 3px solid rgb(0, 0, 0);
+}
+
+.content-list-container ul li:nth-of-type(1) a {
+  border-left: 3px solid rgb(255, 255, 255);
+}
+
+
+.content-list-container ul li a i {
+  transform: translate(-2px, 9px);
+  transition: all 0.3s;
+}
+
+.content-list-container ul li a:hover i {
+  transform: translate(5px, 9px);
+}
+
+/* ===================================== */
+
+.sidebar-container .img-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 45px;
+}
+
+/* .img-container .img-content {
+  width: 100%;
+  height: 150px;
+  background-image: url(../HTML-Images_file/2721267.png);
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.sidebar-container .img-container p {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin: 18px auto 0 auto;
+  text-align: center;
+  line-height: 25px;
+}
+
+.sidebar-container .img-container p a {
+  display: inline-block;
+  color: rgb(0, 110, 255);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Introduction section */
+.intro-container {
+  width: 100%;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.intro-container .intro-content {
+  width: 800px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 300px;
+  padding-left: 10px;
+}
+
+.intro-content h1 {
+  font-size: 70px;
+  color: white;
+  height: 100px;
+  position: relative;
+  z-index: 13;
+  margin-top: 135px;
+}
+
+.intro-content p {
+  width: 680px;
+  font-size: 18px;
+  color: rgb(240, 240, 240);
+  height: 100px;
+  position: relative;
+  z-index: 13;
+  margin-top: 20px;
+  margin-left: 5px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.intro-content p a:nth-of-type(1) {
+  color: rgb(255, 94, 0);
+  font-size: 20px;
+}
+
+.intro-content p a:nth-of-type(2) {
+  color: rgb(0, 110, 255);
+  font-size: 20px;
+}
+
+.intro-content p a:nth-of-type(3) {
+  color: rgb(255, 238, 0);
+  font-size: 20px;
+}
+.intro-content p a {
+  text-decoration: none;
+}
+
+.intro-content p a:hover {
+  text-decoration: underline;
+}
+
+.intro-content a.button {
+  font-size: 16px;
+  color: white;
+  margin-top: 130px;
+  font-weight: bold;
+  margin-left: 5px;
+  padding: 5px 30px;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.intro-content a.button span {
+  position: absolute;
+  width: 23%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 1s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.intro-content a.button:hover {
+  color: rgb(0, 0, 0);
+}
+
+.intro-content a.button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.intro-content a.button span:nth-child(1) {
+  --n: 1;
+}
+
+.intro-content a.button span:nth-child(2) {
+  --n: 2;
+}
+
+.intro-content a.button span:nth-child(3) {
+  --n: 3;
+}
+
+.intro-content a.button span:nth-child(4) {
+  --n: 4;
+}
+
+/* ========================  chapter 1 languages */
+
+.chapter-1-container {
+  width: 76%;
+  height: 1900px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 24%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title-chapter1 {
+  font-size: 50px;
+  color: black;
+  margin: 0 0 30px 110px;
+}
+
+.chapter-1-container .text-container-chapter1 {
+  width: 88%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding-left: 110px;
+}
+
+.text-container-chapter1 h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.text-container-chapter1 p {
+  color: rgb(78, 78, 78);
+  font-size: 17px;
+  text-align: justify;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.chapter-1-container .text-container-chapter1:nth-of-type(1) h1 {
+  margin-top: 30px;
+}
+
+.chapter-1-container .text-container-chapter1:nth-of-type(2) {
+  height: 390px;
+}
+
+.chapter-1-container .text-container-chapter1:nth-of-type(4) {
+  height: 220px;
+}
+.chapter-1-container .text-container-chapter1:nth-of-type(4) h1 {
+  font-size: 30px;
+  margin-top: 15px;
+  color: rgb(223, 1, 1);
+}
+
+.chapter-1-container .text-container-chapter1:nth-of-type(5) {
+  height: 280px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.text-container-chapter1 .column-container {
+  width: 250px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  border-radius: 10px 35px;
+  background-color: rgb(201, 201, 201);
+}
+
+.column-container h3 {
+  color: rgb(0, 0, 0);
+  margin-top: 35px;
+  position: relative;
+  z-index: 10;
+  transition: all 0.7s;
+}
+
+.column-container div {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  position: relative;
+  transition: all 0.7s;
+  z-index: 10;
+}
+
+.column-container div p {
+  transition: all 1s;
+  color: black;
+}
+
+.column-container span {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  transition: all 1s;
+  border-bottom-right-radius: 100%;
+  background-color: rgb(0, 217, 255);
+}
+
+.column-container:hover span {
+  background-color: rgb(0, 55, 128);
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  border-radius: 0;
+}
+
+.column-container:nth-of-type(2) span {
+  background-color: rgb(162, 0, 255);
+}
+.column-container:nth-of-type(2):hover span {
+  background-color: rgb(185, 0, 102);
+}
+
+.column-container:nth-of-type(3) span {
+  background-color: rgb(0, 165, 124);
+}
+.column-container:nth-of-type(3):hover span {
+  background-color: rgb(0, 80, 60);
+}
+
+.column-container:hover h3 {
+  color: white;
+}
+.column-container:hover p {
+  color: rgb(255, 255, 255);
+}
+
+/* ========================  chapter 2 languages */
+
+.chapter-2-container {
+  width: 76%;
+  height: 950px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+.chapter-2-container .title {
+  color: black;
+  font-size: 55px;
+  margin-top: 100px;
+
+}
+
+.chapter-2-container .paragraph-container {
+  width: 87%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.paragraph-container p {
+  color: black;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.chapter-2-container .version-container {
+  width: 87%;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.version-container .content {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  padding: 10px 0 0 48px;
+}
+
+.version-container .content span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  background-color: rgb(0, 167, 218);
+}
+
+.version-container .content p {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+
+
+
+/* ========================  chapter 3 Html Works */
+.chapter-3-container{
+  width: 76%;
+  height: 2000px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+.chapter-3-container .title-container {
+  width: 86%;
+  height: 120px;
+  position: relative;
+  margin-top: 130px;
+}
+
+.title-container h1{
+  position: absolute;
+  font-size: 65px;
+  top: 20px;
+  font-family: sans-serif;
+}
+
+.title-container .front-title{
+  color: rgba(216, 216, 216, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.title-container .back-title{
+  color: rgb(0, 113, 194);
+  animation: anime 3s ease-in-out infinite;
+}
+
+@keyframes anime {
+  0%, 100%{
+      clip-path: polygon(0% 54%, 11% 50%, 22% 49%, 30% 54%, 40% 60%, 53% 62%, 67% 60%, 76% 55%, 83% 49%, 93% 45%, 100% 45%, 100% 100%, 0% 100%);
+  }
+  50%{
+      clip-path: polygon(0 55%, 11% 61%, 22% 63%, 31% 60%, 42% 58%, 53% 54%, 65% 53%, 76% 54%, 85% 55%, 94% 59%, 100% 64%, 100% 100%, 0% 100%);
+
+  }
+}                
+
+
+
+
+.chapter-3-container .explain-container{
+  width: 86%;
+  height: 200px;
+  margin-top: 15px;
+}
+
+.explain-container p{
+  color: black;
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* ==================================== */
+
+.chapter-3-container .element-parts-container{
+  width: 86%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.element-parts-container h3{
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+
+.element-parts-container div{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.element-parts-container div:nth-of-type(2){
+  height: 40px;
+}
+
+.element-parts-container div span{
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  background-color: rgb(0, 167, 218);
+}
+
+.element-parts-container div p{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 18px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.element-parts-container div p b{
+  color: black;
+  font-weight: 600;
+}
+
+/* ==================================== */
+.chapter-3-container .explanation-element-parts-container{
+  width: 86%;
+  height: 1260px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.explanation-element-parts-container p{
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.explanation-element-parts-container pre{
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+  padding-left: 5px;
+  font-style: italic;
+  border-left: 3px solid aqua;
+  background-color: rgb(236, 236, 236);
+}
+.explanation-element-parts-container pre .blue{
+  color: rgb(0, 60, 255);
+}
+
+
+.explanation-element-parts-container p:nth-of-type(2){
+  margin-top: 25px;
+}
+
+.explanation-element-parts-container p:nth-of-type(3){
+  color: rgb(46, 46, 46);
+  margin-top: 35px;
+}
+
+.explanation-element-parts-container p:nth-of-type(4){
+  margin-top: 35px;
+}
+
+.explanation-element-parts-container p:nth-of-type(5){
+  color: rgb(46, 46, 46);
+}
+
+.explanation-element-parts-container p:nth-of-type(5) span{
+  font-weight: 100;
+  font-style: italic;
+  color: rgb(0, 60, 255);
+}
+
+
+.explanation-element-parts-container .class-explanation{
+  width: 98%;
+  height: 460px;
+  font-style: italic;
+  margin-left: 15px;
+  padding: 10px 0;
+  padding-left: 10px;
+
+  border-radius: 5px;
+  background-color: rgb(212, 212, 212);
+}
+
+
+.class-explanation .blue{
+  color: rgb(0, 60, 255);
+}
+
+
+.explanation-element-parts-container p:nth-of-type(6){
+  margin-top: 50px;
+}
+
+.explanation-element-parts-container p:nth-of-type(7){
+  color: rgb(46, 46, 46);
+}
+.explanation-element-parts-container p:nth-of-type(7) span{
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+.explanation-element-parts-container p:nth-of-type(8){
+  margin-top: 50px;
+}
+.explanation-element-parts-container p:nth-of-type(8) span{
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+
+
+/* !========================  mini part most use tags */
+
+.mini-part-container{
+  width: 76%;
+  height: 350px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+.mini-part-container .mini-part-content{
+  width: 85%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:space-around;
+}
+
+.mini-part-content .animation-container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: center;
+}
+.animation-container .animation-content{
+  width: 250px;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 33px;
+  font-weight: bold;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.animation-content div:first-child {
+  animation: text-animation 5s infinite;
+}
+
+.animation-content .first {
+  background-color:rgb(0, 49, 95);
+  margin-bottom: 20px;
+}
+.animation-content .second {
+  background-color:rgb(136, 0, 68);
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: 0;}
+
+  40% {margin-top: -68px;}
+  60% {margin-top: -68px;}
+
+  80% {margin-top: 0;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
+
+.animation-container h1{
+  display: inline-block;
+  color: black;
+  font-size: 33px;
+  word-spacing: 5px;
+}
+
+.mini-part-content p{
+  color: rgb(54, 54, 54);
+  font-size: 16px;
+  text-align: justify;
+}
+
+.mini-part-content p a{
+  color: rgb(0, 60, 255);
+  font-weight: 600;
+}
+
+
+
+
+
+/* ========================  chapter 4 Inline & Block Element */
+
+.chapter-4-container{
+  width: 76%;
+  height: 1450px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+/* ==================== Typewriter Animation */
+
+.chapter-4-container .title{
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  margin-top: 130px;
+  background-image: url(../HTML-Images_file/History.png);
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cursor */
+.chapter-4-container .cursor {
+  position: relative;
+  width: 70%;
+  color: rgb(255, 255, 255);
+  border-right: 2px solid rgb(0, 167, 218);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.chapter-4-container .typewriter-animation {
+  animation: typewriter 8s steps(50) infinite normal both ,
+    blinkingCursor 600ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgb(0, 167, 218);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+/* ================================ */
+
+
+.chapter-4-container .inline-element-container{
+  width: 85%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 45px;
+  padding:0 10px;
+}
+
+
+
+.inline-element-container h1{
+  color: black;
+  font-size: 35px;
+  margin: 30px 0 15px 0;
+  
+}
+
+.inline-element-container p:nth-of-type(1){
+  color: rgb(75, 75, 75);
+}
+
+.inline-element-container p{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.inline-element-container pre{
+  width: 98%;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+  padding-left: 5px;
+  margin-top: 15px;
+  font-style: italic;
+  border-left: 3px solid aqua;
+  background-color: rgb(236, 236, 236);
+}
+.inline-element-container pre .blue{
+  color: rgb(0, 60, 255);
+}
+
+
+/* =========================================== */
+
+
+.chapter-4-container .block-element-container{
+  width: 85%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+
+.block-element-container h1{
+  color: black;
+  font-size: 35px;
+  margin: 30px 0 15px 0;
+}
+
+
+
+.block-element-container p{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 800;
+  text-align: justify;
+}
+
+
+
+.chapter-4-container .block-element-container .list-container{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.list-container h3{
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+
+.list-container div{
+  width: 100%;
+  height: 30px;
+  position: relative;
+  padding-left: 25px;
+}
+
+
+.list-container div span{
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 10px;
+  border-radius: 50%;
+  background-color: rgb(0, 167, 218);
+}
+
+.list-container div p{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.block-element-container .list-container:nth-last-of-type(1) {
+  height: 220px;
+  margin-top: 20px;
+}
+.block-element-container .list-container:nth-last-of-type(1) div {
+  height: 60px;
+}
+.block-element-container .list-container:nth-last-of-type(1) div:nth-last-of-type(2) {
+  height: 40px;
+}
+
+
+.block-element-container .class-explanation{
+  width: 98%;
+  height: 205px;
+  font-style: italic;
+  padding: 10px 0;
+  padding-left: 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border-left: 5px solid aqua;
+  background-color: rgb(212, 212, 212);
+}
+
+
+
+
+
+/* ========================  chapter 5 Pros and Cons */
+.chapter-5-container{
+  width: 76%;
+  height: 950px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+.chapter-5-container .title{
+  color: black;
+  font-size: 55px;
+  margin-top: 130px;
+}
+
+
+.chapter-5-container p.paragraph{
+  width: 80%;
+  color: rgb(70, 70, 70);
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+
+/* ========================================= */
+.chapter-5-container .pros-container{
+  width: 85%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.chapter-5-container .list-container-5{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-start;
+}
+
+.pros-container .list-container-5 h3{
+  font-size: 20px;
+  color: green;
+}
+
+
+.list-container-5 div{
+  width: 100%;
+  height: 30px;
+  position: relative;
+  padding-left: 25px;
+}
+
+
+.list-container-5 div span{
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 10px;
+  border-radius: 50%;
+  background-color: rgb(0, 167, 218);
+}
+
+.list-container-5 div p{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 400;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+
+
+/* ========================================== */
+.chapter-5-container .cons-container{
+  width: 85%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+.cons-container .list-container-5 h3{
+  font-size: 20px;
+  color: red;
+}
+
+
+.cons-container .list-container-5 div{
+  height: 50px;
+}
+
+
+
+
+
+
+/* ======================  chapter 6 Languages Relation */
+.chapter-6-container{
+  width: 76%;
+  height: 500px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+.chapter-6-container .title{
+  color: black;
+  font-size: 47.5px;
+  margin-top: 130px;
+}
+
+
+.chapter-6-container .chapter6-content{
+  width: 83%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+
+
+.chapter6-content p{
+  font-size: 17px;
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 10px;
+  color: rgb(66, 66, 66);
+} 
+
+
+.chapter6-content p:nth-of-type(1) a{
+  color: rgb(0, 60, 255);
+}
+
+
+
+/* ======================  chapter 7 Conclusion */
+.chapter-7-container{
+  width: 76%;
+  height: 470px;
+  position: relative;
+  left: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 110px;
+}
+
+
+
+.chapter-7-container .title{
+  color: black;
+  font-size: 47.5px;
+  margin-top: 50px;
+}
+
+
+.chapter-7-container .text-container{
+  width: 83%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.text-container p{
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+
+

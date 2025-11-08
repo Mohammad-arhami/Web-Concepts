@@ -1,0 +1,1063 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "biyekan";
+  src: url(../Font_files/transfonter.org-20230716-122746/BYekan.eot)
+      format("embedded-opentype"),
+    url(../Font_files/transfonter.org-20230716-122746/BYekan.ttf)
+      format("truetype"),
+    url(../Font_files/transfonter.org-20230716-122746/BYekan.woff)
+      format("woff");
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: biyekan;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* navigation bar */
+
+.nav-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container .title-container {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-container h3 {
+  font-size: 24px;
+  font-family: biyekan;
+  margin-left: 115px;
+  background: linear-gradient(
+    110deg,
+    rgba(0, 174, 255),
+    rgb(183, 0, 255) 33%,
+    rgb(255, 0, 149) 66%,
+    rgb(255, 174, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-container .list-container {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: biyekan;
+}
+
+.nav-container ul li {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+  
+.nav-container ul li a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+  
+.nav-container ul li a:hover {
+    transform: translateY(-5px);
+}
+
+.nav-container .icon-container {
+  width: 315px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container .icon-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.nav-container .icon-container button img{
+  transform: scaleX(-1);
+}
+
+.nav-container .icon-container button span{
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
+
+/* introduction section */
+
+
+.intro-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.intro-container h1 {
+  color: black;
+  font-size: 65px;
+  margin-top: 30px;
+}
+
+.intro-container p {
+  color: black;
+  font-size: 18px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* ------------------------- */
+
+.intro-container .cover-right {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: -10px;
+  right: -294px;
+  transform: rotate(50deg);
+  background-color:rgb(0, 39, 73);
+}
+
+.intro-container .cover-left {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: -10px;
+  left: -294px;
+  transform: rotate(-50deg);
+  background-color:rgb(66, 187, 217);
+}
+
+/* carousel and side image section */
+.carousel-and-sideimage-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------- */
+
+.carousel-and-sideimage-container .image-container {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container .cover-container {
+  width: 298px;
+  height: 470px;
+  position: absolute;
+  top: -166px;
+  left: -156px;
+  transform: rotate(42deg);
+  background-color: rgb(66, 187, 217);
+}
+
+/* ---------------------------------- */
+
+.carousel-and-sideimage-container .carousel-container {
+  width: 60%;
+  height: 100%;
+}
+
+/* ================================ */
+
+.carousel-and-sideimage-container .image-container1 {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container1 .cover-container1 {
+  width: 298px;
+  height: 470px;
+  position: absolute;
+  top: -166px;
+  right: -156px;
+  transform: rotate(-42deg);
+  background-color: rgb(0, 39, 73);
+}
+
+
+
+
+
+
+
+
+
+/* UI explanation chapter 1 */
+.chapter-1-container {
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chapter-1-container h1 {
+  color: black;
+  font-size: 55px;
+  margin-top: 80px;
+}
+
+.chapter-1-container p {
+  color: black;
+  font-size: 17px;
+  margin-top: 30px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* UI explanation chapter 2 */
+.chapter-2-container {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------- */
+
+.chapter-2-container .text-container-chapter2 {
+  width: 60%;
+  height: 100%;
+  padding-left: 90px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text-container-chapter2 h1 {
+  color: black;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+.text-container-chapter2 ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.text-container-chapter2 ul li {
+  color: rgb(61, 61, 61);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.text-container-chapter2 ul li span {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.text-container-chapter2 ul p {
+  color: black;
+  font-size: 17px;
+  margin-top: 35px;
+  font-style: oblique;
+}
+
+/* ------------------------------ */
+
+.chapter-2-container .img-container-chapter2 {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container-chapter2 img:nth-child(1) {
+  top: 30px;
+  left: -20px;
+  position: absolute;
+}
+
+.img-container-chapter2 img:nth-child(2) {
+  top: 110px;
+  left: 160px;
+  position: absolute;
+}
+
+.img-container-chapter2 img:nth-child(3) {
+  top: 210px;
+  right: 75px;
+  position: absolute;
+}
+
+.img-container-chapter2 img:nth-child(4) {
+  top: 260px;
+  left: 60px;
+  position: absolute;
+}
+
+.img-container-chapter2 img:nth-child(5) {
+  top: 350px;
+  right: 130px;
+  position: absolute;
+}
+
+/* UI explanation chapter 3 */
+.chapter-3-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------- */
+
+.chapter-3-container .text-container-chapter3 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+}
+
+.text-container-chapter3 h1 {
+  color: black;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.text-container-chapter3 ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.text-container-chapter3 ul li {
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.text-container-chapter3 p:nth-of-type(1) {
+  color: black;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.text-container-chapter3 p:nth-of-type(2) {
+  color: black;
+  font-size: 17px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* -------------------------------- */
+
+.chapter-3-container .img-container-chapter3 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container-chapter3 div:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 90px;
+  border-radius: 50%;
+  background-color: rgba(107, 128, 107, 0.822);
+}
+
+.img-container-chapter3 div:nth-child(1) img {
+  width: 130px;
+  height: auto;
+  animation: blaky 0.5s linear alternate infinite;
+}
+
+@keyframes blaky {
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+/* ------------------------------------ */
+
+.img-container-chapter3 div:nth-child(2) {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 260px;
+  right: 100px;
+  border-radius: 50%;
+  background-color: rgba(166, 179, 166, 0.822);
+}
+
+.img-container-chapter3 div:nth-child(2) img {
+  width: 280px;
+  height: auto;
+}
+
+/* UX explanation chapter 4 */
+.chapter-4-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 90px;
+  margin-top: 50px;
+  background-image: url("../Ui Ux-Images_file/hero-bg-flip.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.chapter-4-container .text-container-chapter4 {
+  width: 85%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-container-chapter4 h1 {
+  color: white;
+  font-size: 55px;
+  margin-top: 40px;
+}
+
+.text-container-chapter4 h1 span {
+  background: linear-gradient(
+    110deg,
+    rgba(0, 174, 255),
+    rgb(183, 0, 255) 33%,
+    rgb(255, 0, 149) 66%,
+    rgb(255, 174, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-container-chapter4 p {
+  color: white;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+/* UX explanation chapter 5  */
+.chapter-5-container {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chapter-5-container h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.chapter-5-container p:nth-of-type(1) {
+  color: black;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.chapter-5-container p:nth-of-type(2) {
+  color: black;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.chapter-5-container .do-list-container {
+  width: 90%;
+  height: 280px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.do-list-container .do-list-content {
+  width: 19%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.do-list-content h5 {
+  text-align: center;
+  font-size: 19px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.do-list-content p {
+  color: gray;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.do-list-content:nth-child(1) h5 {
+  background: linear-gradient(
+    110deg,
+    rgb(0, 225, 255),
+    rgb(0, 162, 255) 33%,
+    rgb(9, 131, 39) 66%,
+    rgb(27, 97, 10)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.do-list-content:nth-child(2) h5 {
+  background: linear-gradient(
+    110deg,
+    rgb(212, 20, 90),
+    rgb(212, 20, 90) 33%,
+    rgb(251, 176, 59) 66%,
+    rgb(252, 162, 18)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.do-list-content:nth-child(3) h5 {
+  background: linear-gradient(
+    110deg,
+    rgb(183, 153, 218),
+    rgb(155, 131, 182) 33%,
+    rgb(30, 204, 178) 66%,
+    rgb(18, 148, 128)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.do-list-content:nth-child(4) h5 {
+  background: linear-gradient(
+    110deg,
+    rgb(88, 77, 60),
+    rgb(88, 77, 60) 33%,
+    rgb(159, 149, 108) 66%,
+    rgb(159, 149, 108)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.do-list-content:nth-child(5) h5 {
+  background: linear-gradient(
+    110deg,
+    rgb(195, 55, 100),
+    rgb(195, 55, 100) 33%,
+    rgb(29, 38, 113) 66%,
+    rgb(29, 38, 113)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* UX explanation chapter 6 */
+.chapter-6-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../Ui Ux-Images_file/hero-bg-vertical-flip.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* ---------------------------------- */
+
+.chapter-6-container .text-container-chapter6 {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+
+.text-container-chapter6 h1 {
+  color: white;
+  font-size: 51px;
+  margin-top: 25px;
+}
+
+.text-container-chapter6 h1 span {
+  background: linear-gradient(
+    110deg,
+    rgba(0, 174, 255),
+    rgb(183, 0, 255) 33%,
+    rgb(255, 0, 149) 66%,
+    rgb(255, 174, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-container-chapter6 ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.text-container-chapter6 ul li {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* ------------------------------------- */
+
+.chapter-6-container .img-container-chapter6 {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.img-container-chapter6 img{
+  align-self: flex-end;
+  position: absolute;
+  top: 50px;
+  animation: onoff 7s linear alternate infinite;
+}
+
+
+
+@keyframes onoff {
+  15%{
+    transform: translate(15px, -25px);
+  }
+  60%{
+    transform: translate(-90px, -55px);
+  }
+  100%{
+    transform: translate(-30px, -10px);
+  }
+}
+
+.img-container-chapter6 p:nth-of-type(1){
+  color: white;
+  font-size: 15px;
+  margin-top: 220px;
+}
+
+.img-container-chapter6 p:nth-of-type(2){
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+
+
+/* Difference Between UX and UI Designers explanation chapter 7 */
+.chapter-7-container{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+
+/* --------------------------------------------- */
+
+.chapter-7-container .text-container-chapter7{
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.text-container-chapter7 h1{
+  color: black;
+  font-size: 45px;
+  margin: 30px 0 15px 0;
+}
+
+.text-container-chapter7 p{
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+
+/* ---------------------------------------------- */
+
+.chapter-7-container .difference-container-chapter7{
+  width: 100%;
+  height: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.difference-container-chapter7 .difference-content{
+  width: 100%;
+  height: 49.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.difference-content h1{
+  color: black;
+  font-size: 50px;
+  margin-top: 25px;
+}
+
+.difference-content .difference-list{
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.difference-content:nth-of-type(1) .difference-list span{
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50% / 25%;
+  margin-right: 30px;
+  position: relative;
+  transition: all 0.8s;
+  overflow: hidden;
+  /* background-color: rgb(123, 0, 148); */
+  background-image: linear-gradient(to bottom ,rgba(213, 3, 255, 0.897),rgba(130, 2, 155, 0.918),rgba(64, 0, 77, 0.911) );
+}
+
+
+.span1-chapter7 div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.difference-content:nth-of-type(2) .difference-list span{
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50% / 25%;
+  margin-right: 30px;
+  position: relative;
+  transition: all 0.8s;
+  overflow: hidden;
+  /* background-color: rgb(156, 8, 124); */
+  background-image: linear-gradient(to bottom ,rgba(248, 0, 194, 0.945),rgba(161, 1, 127, 0.966),rgba(109, 0, 85, 0.925));
+}
+
+
+
+/* How to Become a UI UXDesigner UX explanation chapter 8 */
+.chapter-8-container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 90px;
+  margin-top: 50px;
+}
+
+.chapter-8-container h1{
+  color: black;
+  font-size: 55px;
+  margin-top: 40px;
+}
+
+
+.chapter-8-container h1 span{
+  background: linear-gradient(
+    110deg,
+    rgba(0, 174, 255),
+    rgb(183, 0, 255) 33%,
+    rgb(255, 0, 149) 66%,
+    rgb(255, 174, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+.chapter-8-container p{
+  color: gray;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+
+/* -------------------------------- */
+
+.chapter-8-container .become-list{
+  width: 93%;
+  height: 410px;
+  display: flex;
+  justify-content:space-between ;
+  align-items:center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+
+.become-list span{
+  width: 350px;
+  height: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.become-list span h3{
+  color: black;
+  font-size: 19px;
+  margin-top: 30px;
+
+}
+
+.become-list span p{
+  color: rgb(85, 85, 85);
+  font-size: 15px;
+  margin: 10px 20px 0 15px;
+  text-align: justify;
+}
+
+.become-list span .line{
+  width: 3px;
+  height: 50px;
+  position: absolute;
+  top: 73px;
+  left: 1px;
+  background-color: rgb(0, 67, 252);
+}
+
+
+
+
+
+/* Conclusion UX UI explanation chapter 9 */
+.chapter-9-container{
+  width: 87%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 10px;
+
+  /* background: linear-gradient(-45deg, #0de6e6, #e00f71, #0770e9, #e90ef1); */
+  background: linear-gradient(-45deg, #0ed3d3, #d10d68, #0c6bd8, #d40fdb);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.chapter-9-container h1{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+.chapter-9-container p{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+
+
+/* ENd chapter 10 */
+.chapter-10-container{
+  width:100%;
+  height: 70px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  margin-top: 70px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.chapter-10-container p{
+  color: white;
+  font-size: 16px;
+  margin-top: 9px;
+}
+
+.chapter-10-container p:nth-child(1) a{
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 170, 248);
+}
+
+
+.chapter-10-container p:nth-child(1){
+  position: absolute;
+  left: 92px;
+  font-weight: bold;
+}
+
+.chapter-10-container p:nth-child(2){
+  font-weight: bold;
+}
+
+
+.chapter-10-container a:nth-child(3) i{
+  color: white;
+  font-size: 30px;
+}
+
+.chapter-10-container a:nth-child(3){
+  position: absolute;
+  right: 92px;
+}

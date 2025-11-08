@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Css_files/CSS.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images_files/code-to-img.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+    </style>
+
+</head>
+<body>
+    
+
+    <!-- navigation bar -->
+
+    <div class="nav-container">
+        <div class="title-container">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="list-container">
+            <ul>
+                <li><a href="../Html_files/F&B-END.html">Front & Back End</a></li>
+                <li><a href="../Html_files/UI-UX.html">Ui & Ux</a></li>
+                <li><a href="../Html_files/HTML.html">Html</a></li>
+                <li><a href="#">Css</a></li>
+                <li><a href="../Html_files/JS.html">Java Script</a></li>
+
+            </ul>
+        </div>
+
+        <div class="icon-container"> 
+                <button class="themBtn"><img src="../Images_files/moon.jpg" class="dark" width="45px" alt=""><span>Dark Mode</span></button>
+        </div>
+    </div>
+
+
+    <!-- Introduction -->
+    <div class="intro-container"  id="jump-top">
+        <div class="intro-content">
+            <h1>Introduction</h1>
+            <h1>To</h1>
+            <h1>CSS</h1>
+        </div>
+        <div class="intro-img">
+            <img src="../CSS_Images_file/1.png" width="350px" alt="reza">
+        </div>
+    </div>
+
+
+    <!-- chapter 1 Introduction -->
+    <div class="chapter-1-container">
+        <div class="text-container-chapter1">
+            <h1>CSS was developed by <br> W3C <span> ( World Wide Web Consortium ) </span> in <br> 1996 for a rather simple reason. <br> HTML element was not designed to have tags that would help format the page. You were only supposed to write the markup for the web page.</h1>
+            <h2>CSS is not technically a necessity, but you probably wouldn’t want to look at a web page that features only HTML elements as it would look completely bare-boned.</h2>
+        </div>
+        <div class="img-container-chapter1">
+            <img src="../CSS_Images_file/groups.svg" width="500px">
+        </div>
+    </div>
+
+
+    <!-- chapter 2 Examples of webpage -->
+    <div class="chapter-2-container">
+        <div class="aurora">
+            <h1 class="title">See some example of <br> <b>Webpage</b> with / without style in below link </h1>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+            <div class="aurora__item"></div>
+        </div>
+     
+        <button><a href="https://www.w3schools.com/css/css_intro.asp">Click Here</a></button>
+    </div>
+
+
+
+    <!-- chapter 3 what is Css -->
+    <div class="chapter-3-container">
+
+        <!-- ! Text 1 -->
+        <div class="text-container-chapter3">
+            <h1 id="scrolled1">What Is CSS? </h1>
+            <h2 id="scrolled2"> CSS stands for Cascading Style Sheets language and is used to stylize elements written in a markup language such as HTML. It separates the content from the visual representation of the site. The relation between HTML and CSS is strongly tied together since HTML is the very foundation of a site and CSS is all of the aesthetics of an entire website.</h2>
+        </div>
+
+        <!-- ! Untitled -->
+        <div class="img-container-chapter3">
+            <div class="void" id="void">
+                <div class="crop">
+                    <ul id="card-list" style="--count: 6;">
+                        <li><div class="card"><a href=""><span class="model-name">6 )</span><span>Improves page Loading speed</span></a></div></li>
+                        <li><div class="card"><a href=""><span class="model-name">5 )</span><span>Consistency <br> Across Pages </span></a></div></li>
+                        <li><div class="card"><a href=""><span class="model-name">4 )</span><span>Better User Experience</span></a></div></li>
+                        <li><div class="card"><a href=""><span class="model-name">3 )</span><span>Responsive Design</span></a></div></li>
+                        <li><div class="card"><a href=""><span class="model-name">2 )</span><span>Greater Design Flexibility</span></a></div></li>
+                        <li><div class="card"><a href=""><span class="model-name">1 )</span><span>Separation of Content from Design</span></a></div></li>
+                    </ul>
+                    <div class="last-circle"></div>
+                    <div class="second-circle"></div>
+                </div>
+                <div class="mask"></div>
+                <div class="center-circle"></div>
+            </div>
+        </div>
+
+        <!-- ! Text 2 -->
+        <div class="text2-container-chapter3">
+            <h1 id="scrolled3">CSS Advantages on Web Pages</h1>
+            <p id="scrolled4">The difference between a web page that implements CSS and one that doesn’t is massive and surely noticeable. <br><br>
+                You might have seen a website that fails to load completely and has a white background color with most of the text being blue and black. This means that the CSS part of the web page didn’t load correctly or it doesn’t exist altogether. <br><br>
+                That’s what web pages with only HTML look like, and I think you’d agree that that’s not very appealing.</p>
+                <img src="../CSS_Images_file/Advantage2.png" id="hiddenIMG">
+        </div>
+        <div class="text2-continue">
+            <p>Before using CSS, all of the stylizing had to be included into the HTML markup. This means web developers had to separately describe the background color, font size, alignments, etc. <br><br>
+                CSS lets you stylize everything on a different file, thus creating the design there and later on integrating the CSS files on top of the HTML markup. This makes the actual HTML markup much cleaner and easier to maintain.
+                In short, with CSS features you don’t need to repeatedly describe how individual elements look. This saves time, shortens the code, and makes it not as prone to errors. <br><br> 
+                CSS lets you have multiple styles on one HTML page, therefore making the customization possibilities almost endless. Nowadays, this is becoming more a necessity than a commodity.</p>
+        </div>
+
+    </div>
+
+    <!-- chapter 4 How Does CSS Work -->
+    <div class="chapter-4-container">
+        <h1>How Does CSS Work ?</h1>
+        <p>CSS uses a simple English based syntax with a set of rules that govern it. Like we’ve mentioned before, HTML was never intended to use style elements, only the markup of the page. It was created to merely describe the content. For example: <strong> &lt; p &gt;   This is a paragraph.  &lt; / p &gt;.</strong></p>
+        <p>But how do you style the paragraph? The CSS syntax structure is pretty simple. It has a selector and a declaration block. You select an element and then declare what you want to do with it. Pretty straightforward, right?</p>
+        <p>However, there are rules you have to remember. The structure rules are pretty simple, so don’t worry.</p>
+        <p>The selector points to the HTML elements you want to style. The declaration block contains one or more declarations separated by semicolons.</p>
+        <p>Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+        <p>Let’s look at an example:</p>
+        <p>All of the &lt; p &gt; elements will be colored blue and bolded.</p>
+
+        <div class="class-explanation">
+            &lt; style &gt;<br>
+            p {<br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; color: blue;<br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; text-weight: bold;<br>
+
+            } <br>
+            &lt; / style &gt;<br>
+        </div>
+
+        <p>In another example, all &lt; p &gt; elements will be center-aligned, be 16x wide and pink.</p>
+    
+    
+        <div class="class-explanation">
+            &lt; style &gt;<br>
+            p {<br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; text-align: center;<br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; font-size: 16px;<br>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; color: pink;<br>
+            } <br>
+            &lt; / style &gt;<br>
+        </div>
+    
+        <p>See our <span style="color: rgb(75, 26, 221);"> CSS cheat sheet </span> for more examples.</p>
+        <p>Now let’s talk about the different styles of CSS. They are Inline, External and Internal.</p>
+    </div>
+
+
+    <!-- chapter 5 CSS styles -->
+    <div class="chapter-5-container">
+        <h1>Internal, external and inline CSS styles</h1>
+        <p>We’ll go over each style briefly. For an in-depth explanation of each method, there will be a link below the overview.</p>
+        <p>Let’s start by talking about the internal style. CSS styles done this way are loaded each time an entire website is refreshed, which may increase loading time. Additionally, you won’t be able to use the same CSS style on multiple pages as it’s contained within a single page. However, this also comes with benefits. Having everything on one page makes it easier to share the template for a preview. The external method might be the most convenient one. Everything is done externally on a .css file. This means you can do all the styling on a separate file and apply the CSS to any page you want. The external style might also improve loading times.</p>
+        <p>Lastly, we will talk about the inline &lt; style &gt; of CSS. Inline works with specific elements that have the style tag. Each component has to be stylized, so it might not be the best or fastest way to handle CSS – in fact, it is much like the inline HTML styles that CSS was intended to replace. But it can come in handy. For example, if you want to change a single element, quickly preview changes, or maybe you don’t have access to the CSS files.</p>
+        <p>For more information about the different styles of CSS, see our in-depth article <a href="https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css">here.</a></p>
+    </div>
+
+
+    <!-- chapter 6 conclusion -->
+    <div class="chapter-6-container">
+        <h1>Conclusion</h1>
+        <p>Let’s sum up what we have learned here about CSS and how it helps with the aesthetic of web pages:</p>
+        <ul>
+            <li>CSS was created to work in conjunction with other markup languages like HTML. It is used to stylize a page.</li>
+            <li>There are three styles of implementing CSS, and you can use the external style to apply to all the pages on a site.</li>
+            <li>You won’t go far without seeing some kind of CSS implementation these days – it’s almost as much of a <br> requirement as the markup language itself.</li>
+        </ul>
+        <p>All in all, we hope you found this article helpful, and if you have any questions, please leave them in the comments section below.</p>
+    </div>
+
+
+    <!-- END chapter 7 -->
+    <div class="chapter-7-container">
+        <p>Article source - <a href="https://mycaptain.in/blogs/what-is-ui-ux-design-beginners-guide">mycaptain</a></p>
+        <p>Good Luck</p>
+        <a href="#jump-top"><i class="fa fa-arrow-circle-up"></i></a>
+    </div>
+
+
+    <script src="../JavaScript_files/CSS.js"></script>
+
+</body>
+</html>
