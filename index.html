@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../Images_files/code-to-img.svg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+    body {
+      background: rgb(240, 244, 248);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+    h1 {
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #000000;
+      font-size: 1.1rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    a {
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: #0078ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #005ecb;
+      transform: scale(1.05);
+    }
+
+ button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+button span{
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Website 👋</h1>
+  <p class="p1">We’re glad to have you here!</p>
+
+  <p class="p2">
+    <strong>Web Concept</strong> is a simple educational website built with 
+    <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+    It explains the core ideas of <strong>Front-end</strong>, <strong>Back-end</strong>,
+    <strong>UI</strong>, and <strong>UX</strong> in web development — designed to help beginners
+    understand how websites are built and how design and functionality work together.
+  </p>
+
+  <a href="./Html_files/F&B-END.html">Go to Main Website</a>
+
+  <button class="themBtn"><img src="./Images_files/moon-icon.svg" class="dark" width="45px" alt=""><span>Dark Mode</span></button>
+
+
+<script>
+
+    const themBtn = document.querySelector(".themBtn");
+    const themImg = themBtn.firstElementChild;
+    const span = themBtn.lastElementChild;
+    const h1 = document.getElementsByTagName("h1")[0];
+    const ps = document.getElementsByTagName("p");
+
+
+    themBtn.addEventListener("click" , () => {
+        if ( themImg.classList.contains("dark") ) {
+            themImg.classList.replace("dark" , "light");
+            themImg.setAttribute("src","../Images_files/light.jpg");
+            span.innerHTML = "Light Mode";
+            document.body.style.backgroundColor = "black";
+
+            h1.style.color = "white";
+            Array.from(ps).forEach(p => {
+                p.style.color = "white";
+            });
+            span.style.color = "white";
+
+        } else{
+            themImg.classList.replace("light" , "dark");
+            themImg.setAttribute("src","./Images_files/moon-icon.svg");
+            span.innerHTML = "Dark Mode";
+            document.body.style.backgroundColor = "white";
+
+            h1.style.color = "black";
+            Array.from(ps).forEach(p => {
+                p.style.color = "black";
+            });
+            span.style.color = "black";
+
+        }
+    });
+
+</script>
+
+
+</body>
+</html>
