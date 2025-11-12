@@ -42,7 +42,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
 }
 
 .nav-container .title-container {
@@ -55,7 +54,6 @@ body {
 
 .title-container h3 {
   font-size: 18px;
-  color: whitesmoke;
   font-family: biyekan;
   background: linear-gradient(
     110deg,
@@ -94,17 +92,41 @@ body {
 }
 
 .nav-container ul li a {
-  color: rgb(245, 245, 245);
-  text-decoration: none;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.nav-container ul li a:hover {
+    transform: translateY(-5px);
 }
 
 .nav-container .icon-container {
-  width: 260px;
+  width: 315px;
   height: 100%;
-  margin-right: 80px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+}
+
+.nav-container .icon-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.nav-container .icon-container button img{
+  transform: scaleX(-1);
+}
+
+.nav-container .icon-container button span{
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -494,9 +516,10 @@ body {
   transform: scale(1.02);
 }
 
-.card-content .visible-container h3 {
+.card-content .visible-container h2 {
   color: black;
   margin-top: 25px;
+  font-size: 20px;
 }
 
 .card-content .visible-container p {
@@ -587,12 +610,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 65px;
-  background-color: white;
 }
 
-.framework-container h3 {
+.framework-container h2 {
   color: black;
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 30px;
 }
 
@@ -1281,32 +1303,19 @@ body {
   color: white;
   font-size: 16px;
   margin-top: 3px;
-}
-
-.chapter-11-container p:nth-child(1) a{
-  font-weight: bold;
-  color: rgb(0, 170, 248);
-}
-
-
-.chapter-11-container p:nth-child(1){
   position: absolute;
-  left: 100px;
+  left: 90px;
   font-size: 13px;
   font-weight: 100;
 }
 
-.chapter-11-container p:nth-child(2){
-  font-weight: bold;
-}
 
-
-.chapter-11-container a:nth-child(3) i{
+.chapter-11-container a i{
   color: white;
   font-size: 30px;
 }
 
-.chapter-11-container a:nth-child(3){
+.chapter-11-container a{
   position: absolute;
-  right: 100px;
+  right: 90px;
 }
