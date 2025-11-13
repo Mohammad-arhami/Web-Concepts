@@ -510,7 +510,6 @@ body {
   transform: scale(1);
   transition: all 0.3s;
   background-color: rgb(255, 255, 255);
-  box-shadow: -3px 6px 10px rgb(187, 187, 187);
 }
 .card-content .visible-container:hover {
   transform: scale(1.02);
@@ -538,12 +537,12 @@ body {
   align-items: center;
   border-radius: 15px;
   position: absolute;
-  bottom: 170px;
+  bottom: 185px;
   transition: all 0.8s;
   background-color: rgb(255, 255, 255);
-  box-shadow: -2px 6px 10px rgb(187, 187, 187);
 }
-.invisible-container:hover {
+.invi
+ible-container:hover {
   bottom: 10px;
 }
 
