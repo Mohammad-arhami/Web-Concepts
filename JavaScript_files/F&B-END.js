@@ -11,6 +11,9 @@ const as = document.querySelectorAll("a");
 const ps = document.querySelectorAll("p");
 const bs = document.querySelectorAll("b");
 const framework_container = document.getElementsByClassName("framework-container")[0];
+const list_of_advantage = document.getElementsByClassName("list-of-advantage");
+const visible_container = document.getElementsByClassName("visible-container");
+const invisible_container = document.querySelectorAll(".invisible-container");
 
 
 themBtn.addEventListener("click" , () => {
@@ -27,7 +30,6 @@ themBtn.addEventListener("click" , () => {
         h2s.forEach((h2) => {
             h2.style.color = "white";
         });
-
 
         ps.forEach((p) => {
             p.style.color = "white";
@@ -50,6 +52,28 @@ themBtn.addEventListener("click" , () => {
         });
 
         framework_container.style.backgroundColor = "black";
+
+        Array.from(list_of_advantage).forEach((liAdvantage) => {
+            liAdvantage.style.boxShadow = "-3px 6px 10px rgba(63, 63, 63, 1)";
+        });
+
+        Array.from(visible_container).forEach((visible) => {
+            visible.style.backgroundColor = "rgba(0, 0, 0, 1)";
+        })
+
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.style.backgroundColor = "rgba(0, 0, 0, 1)";
+        })
+
+                
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.firstElementChild.nextElementSibling.style.border = "1px solid rgb(255, 255, 255)";
+        })
+
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.lastElementChild.style.color = "rgb(255, 255, 255)";
+        })
+
 
     } else{
         themImg.classList.replace("light" , "dark");
@@ -96,6 +120,26 @@ themBtn.addEventListener("click" , () => {
 
         framework_container.style.backgroundColor = "whitesmoke";
 
+        Array.from(list_of_advantage).forEach((liAdvantage) => {
+            liAdvantage.style.boxShadow = "-3px 6px 10px rgb(187, 187, 187)";
+        });
+
+        Array.from(visible_container).forEach((visible) => {
+            visible.style.backgroundColor = "rgba(255, 255, 255, 1)";
+        })
+
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.style.backgroundColor = "rgba(255, 255, 255, 1)";
+        })
+        
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.firstElementChild.nextElementSibling.style.color = "rgba(255, 255, 255, 1)";
+            invisible.firstElementChild.nextElementSibling.style.border = "1px solid rgba(0, 0, 0, 1)";
+        })
+
+        Array.from(invisible_container).forEach((invisible) => {
+            invisible.lastElementChild.style.color = "rgba(0, 0, 0, 1)";
+        })
 
     }
 });
@@ -106,15 +150,8 @@ themBtn.addEventListener("click" , () => {
 
 
 
+// ! =============================================================
 
-
-
-
-
-
-
-
-const invisible_container = document.querySelectorAll(".invisible-container");
 const icons =  Array.from(invisible_container).map((container) => {
     return container.lastElementChild
 });
