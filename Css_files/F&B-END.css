@@ -955,7 +955,7 @@ body {
   justify-content: center;
   border-radius: 10px;
   transition: all 1s;
-  border: 1px solid rgb(211, 211, 211);
+  border: 2px solid rgb(211, 211, 211);
   background-color: rgb(233, 233, 233);
 }
 
@@ -1008,8 +1008,7 @@ body {
 }
 
 .overlay a:hover {
-  color: black;
-  background-color: white;
+  transform: scale(1.1);
 }
 
 /* Backend explanation chapter 8 */

@@ -14,6 +14,7 @@ const framework_container = document.getElementsByClassName("framework-container
 const list_of_advantage = document.getElementsByClassName("list-of-advantage");
 const visible_container = document.getElementsByClassName("visible-container");
 const invisible_container = document.querySelectorAll(".invisible-container");
+const languages_list = document.querySelectorAll(".languages-list");
 
 
 themBtn.addEventListener("click" , () => {
@@ -74,6 +75,9 @@ themBtn.addEventListener("click" , () => {
             invisible.lastElementChild.style.color = "rgb(255, 255, 255)";
         })
 
+        Array.from(languages_list).forEach((lang) => {
+            lang.style.backgroundColor = "rgba(0, 0, 0, 1)";
+        })
 
     } else{
         themImg.classList.replace("light" , "dark");
@@ -88,7 +92,9 @@ themBtn.addEventListener("click" , () => {
         });
 
         h2s.forEach((h2) => {
-            h2.style.color = "black";
+            if (!h2.parentElement.classList.contains("overlay")) {
+                h2.style.color = "black";
+            }
         });
 
 
@@ -111,7 +117,9 @@ themBtn.addEventListener("click" , () => {
         });
 
         as.forEach((a) => {
-            a.style.color = "black";
+            if (!a.parentElement.classList.contains("overlay")) {
+                a.style.color = "black";    
+            }
         });
 
         bs.forEach((b) => {
@@ -141,6 +149,9 @@ themBtn.addEventListener("click" , () => {
             invisible.lastElementChild.style.color = "rgba(0, 0, 0, 1)";
         })
 
+        Array.from(languages_list).forEach((lang) => {
+            lang.style.backgroundColor = "rgba(233, 233, 233, 1)";
+        })
     }
 });
 
