@@ -994,6 +994,7 @@ body {
   margin-top: 35px;
   text-decoration: none;
   transition: all 0.3s;
+  border-radius: 8px;
   animation: changearound 0.3s linear alternate infinite;
   box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
 }
@@ -1008,7 +1009,7 @@ body {
 }
 
 .overlay a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Backend explanation chapter 8 */
@@ -1186,13 +1187,18 @@ body {
   align-items: center;
 }
 
-.text-list-content:nth-child(1) img {
-  margin-top: 15px;
+.text-list-container-chapter9 .text-list-content p{
+  margin : 15px 0;
 }
+
+/* .text-list-content:nth-child(1) img {
+  margin-top: 20px;
+} */
 
 
 .text-list-content img{
   transition: all 0.5s;
+  margin-top: 20px;
 }
 .text-list-content img:hover{
   transform: scale(1.1);
