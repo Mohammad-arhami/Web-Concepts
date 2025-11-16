@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: biyekan;
+  background-color: whitesmoke;
 }
 
 .dm-serif-text-regular {
@@ -429,7 +430,23 @@ body {
 }
 
 .text-container-chapter2 h1 span {
-  color: rgb(0, 136, 255);
+  display: inline-block;
+  transition: all 0.3s;
+  animation: updown 0.8s linear alternate infinite;
+  color: rgb(8, 162, 251);
+  background-image: linear-gradient(
+    to right,
+    rgba(21, 243, 248, 0.84),
+    rgb(30, 90, 231)
+  );
+  background: linear-gradient(
+    110deg,
+    rgba(21, 233, 248, 0.84),
+    rgb(30, 90, 231)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .text-container-chapter2 p {
@@ -837,14 +854,14 @@ body {
   color: transparent;
 }
 
-@keyframes updown {
+/* @keyframes updown {
   from {
     transform: translateY(0);
   }
   to {
     transform: translateY(-8px);
   }
-}
+} */
 
 .text-container p {
   color: rgb(0, 0, 0);
@@ -1140,21 +1157,21 @@ body {
   margin-top: 30px;
 }
 
-.text-container-chapter9 h1 span {
+/* .text-container-chapter9 h1 span {
   display: inline-block;
   transition: all 0.3s;
   animation: updown2 0.8s linear alternate infinite;
-  color: rgb(15, 219, 226);
-}
+  color: rgb(15, 194, 226);
+} */
 
-@keyframes updown2 {
+/* @keyframes updown2 {
   from {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
   }
-}
+} */
 
 .text-container-chapter9 p:nth-of-type(1) {
   color: black;

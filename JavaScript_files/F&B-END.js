@@ -37,7 +37,9 @@ themBtn.addEventListener("click" , () => {
         });
 
         spans.forEach((span) => {
-            span.style.color = "white";
+            if (!span.classList.contains("specific")) {
+                span.style.color = "white";
+            }
         });
 
         lis.forEach((li) => {

@@ -21,6 +21,7 @@ html{
 body {
   overflow-x: hidden;
   font-family: biyekan;
+  background-color: whitesmoke;
 }
 
 .dm-serif-text-regular {
@@ -425,10 +426,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 100px;
+  top: 70px;
   right: 90px;
-  border-radius: 50%;
-  background-color: rgba(107, 128, 107, 0.822);
 }
 
 .img-container-chapter3 div:nth-child(1) img {
@@ -454,8 +453,8 @@ body {
   position: absolute;
   top: 260px;
   right: 100px;
-  border-radius: 50%;
-  background-color: rgba(166, 179, 166, 0.822);
+  border-radius: 30% 10%;
+  background-color: rgba(0, 33, 77, 0.822);
 }
 
 .img-container-chapter3 div:nth-child(2) img {
@@ -958,7 +957,7 @@ body {
 
 .become-list span .line{
   width: 3px;
-  height: 50px;
+  height: 25px;
   position: absolute;
   top: 73px;
   left: 1px;

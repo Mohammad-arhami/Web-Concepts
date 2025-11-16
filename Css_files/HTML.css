@@ -19,11 +19,11 @@ html {
 }
 
 
-
 body {
   font-family: biyekan;
   overflow-x: hidden;
   position: relative;
+  background-color: whitesmoke;
 }
 
 .dm-serif-text-regular {
