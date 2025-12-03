@@ -1030,17 +1030,13 @@
   font-weight: bold;
 }
 
-.chapter-7-container p:nth-child(2){
-  font-weight: bold;
-}
 
-
-.chapter-7-container a:nth-child(3) i{
+.chapter-7-container a:nth-child(2) i{
   color: white;
   font-size: 30px;
 }
 
-.chapter-7-container a:nth-child(3){
+.chapter-7-container a:nth-child(2){
   position: absolute;
   right: 92px;
 }

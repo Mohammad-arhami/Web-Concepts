@@ -4,6 +4,7 @@ const span = themBtn.lastElementChild;
 const h1s = document.querySelectorAll("h1");
 const ps = document.querySelectorAll("p");
 const bs = document.querySelectorAll("b");
+const lis = document.querySelectorAll("li");
 
 themBtn.addEventListener("click" , () => {
     if ( themImg.classList.contains("dark") ) {
@@ -24,6 +25,10 @@ themBtn.addEventListener("click" , () => {
             b.style.color = "rgb(255, 255, 255)";
         });
 
+        lis.forEach((li) => {
+            li.style.color = "white";
+        });
+
     } else{
         themImg.classList.replace("light" , "dark");
         themImg.setAttribute("src","../Images_files/moon.jpg");
@@ -33,14 +38,20 @@ themBtn.addEventListener("click" , () => {
         h1s.forEach((h1) => {
             h1.style.color = "black";
         });
-
+        
         ps.forEach((p) => {
-            p.style.color = "black";
+            if (!p.classList.contains("specific")) {
+                p.style.color = "black";
+            };
         });
 
         bs.forEach((b) => {
             b.style.color = "black";
         });
+
+        lis.forEach((li) => {
+            li.style.color = "black";
+        })
     }
 });
 
