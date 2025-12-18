@@ -2,10 +2,12 @@
 const themBtn = document.querySelector(".themBtn");
 const themImg = themBtn.firstElementChild;
 const span = themBtn.lastElementChild;
+const spans = document.querySelectorAll("span");
 const h1s = document.querySelectorAll("h1");
 const ps = document.querySelectorAll("p");
 const lis = document.querySelectorAll("li");
 const as = document.querySelectorAll("a");
+const bs = document.querySelectorAll("b");
 
 themBtn.addEventListener("click" , () => {
     if ( themImg.classList.contains("dark") ) {
@@ -31,6 +33,18 @@ themBtn.addEventListener("click" , () => {
             a.style.color = "white";
         });
 
+        spans.forEach((span) => {
+            span.style.color = "white";
+        });
+
+
+        bs.forEach((b) => {
+            if (!b.classList.contains("specific")) {
+                b.style.color = "white";
+            }
+        });
+
+
     } else{
         themImg.classList.replace("light" , "dark");
         themImg.setAttribute("src","../Images_files/moon-icon.svg");
@@ -52,14 +66,18 @@ themBtn.addEventListener("click" , () => {
         as.forEach((a) => {
             a.style.color = "black";    
         });
+
+        spans.forEach((span) => {
+            span.style.color = "black";
+        });
+
+        bs.forEach((b) => {
+            b.style.color = "black";
+        });
+
+
     }
 });
-
-
-
-
-
-
 
 
 
