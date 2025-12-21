@@ -85,7 +85,7 @@ themBtn.addEventListener("click" , () => {
 const appair = document.getElementById("appair")
 
 window.addEventListener("scroll" , () => {
-    if (window.scrollY > 430) {
+    if (window.scrollY > 380) {
         appair.style.opacity = "1"
     }
 })
