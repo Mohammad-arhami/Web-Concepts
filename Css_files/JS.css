@@ -222,7 +222,7 @@ h1.typewriter-animation {
 
 .chapter-1-container p{
   width: 880px;
-  font-size: 20px;
+  font-size: 19px;
   color: rgb(17, 17, 17);
   text-align: center;
   line-height: 28px;
@@ -262,4 +262,35 @@ h1.typewriter-animation {
 .chapter-2-container h1{
   font-size: 45px;
   margin-top: 110px;
+}
+
+.chapter-2-container .text-container-chapter2{
+  width: 87%;
+  height:100%;
+  margin-top: 30px;
+  /* background-color: red; */
+}
+
+
+.text-container-chapter2 p{
+  color: black;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+
+.text-container-chapter2 ul{
+  margin-left: 50px;
+}
+
+.text-container-chapter2 ul li{
+  margin: 10px 0;
+  text-align: justify;
+}
+
+
+.text-container-chapter2 p:nth-of-type(2){
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 800;
 }
