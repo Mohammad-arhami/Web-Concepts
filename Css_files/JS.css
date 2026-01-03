@@ -335,3 +335,42 @@ h1.typewriter-animation {
   font-size: 18px;
   margin-top: 40px;
 }
+
+
+
+
+/*! ========================  chapter 3 Key features of js */
+
+.chapter-3-container {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 115px;
+  background-color: red;
+}
+
+
+.chapter-3-container h1{
+  font-size: 80px;
+  margin-top: 50px;
+}
+
+
+.chapter-3-container .text-container-chapter3 p{
+  color: black;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+
+.text-container-chapter3 ul{
+  margin-left: 50px;
+}
+
+.text-container-chapter3 ul li{
+  margin: 10px 0;
+  text-align: justify;
+}
