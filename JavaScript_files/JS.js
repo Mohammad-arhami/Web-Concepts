@@ -114,10 +114,8 @@ const contents = Array.from(content_container.children);
 function contentChanger(contents , index) {
     contents.forEach((content) => {
         if (content.classList.contains(`content-li${index + 1}`)) {
-            content.style.display = "flex";
             content.style.opacity = "1";
         }else{
-            content.style.display = "none";
             content.style.opacity = "0";
         }
     })

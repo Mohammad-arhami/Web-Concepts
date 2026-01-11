@@ -425,10 +425,11 @@ h1.typewriter-animation {
   width: 800px;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   margin-left: 80px;
+  position: relative;
 }
 
 
@@ -438,8 +439,10 @@ h1.typewriter-animation {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  transition: all 0.5s;
-  position: relative;
+  transition: all 0.6s;
+  position: absolute;
+  top: 10px;
+  left: 0;
   overflow: hidden;
 }
 
@@ -466,19 +469,22 @@ h1.typewriter-animation {
   padding: 25px 15px;
 }
 
+.content-container-chapter3 .content-li1 p{
+  top: 35px;
+  left: 10px;
+}
+
 
 .content-container-chapter3 .content-li1 img{
   width: 900px;
-  top: 40px;
+  top: 55px;
   left: 35px;
 }
 
 /*! ================   2   =============== */
 
 .content-container-chapter3 .content-li2{
-  display: none;
   opacity: 0;
-  transition: all 10s;
   overflow: visible;
 }
 
@@ -497,7 +503,6 @@ h1.typewriter-animation {
 /*! ==============    3    =============== */
 
 .content-container-chapter3 .content-li3{
-  display: none;
   opacity: 0;
 }
 
@@ -508,7 +513,7 @@ h1.typewriter-animation {
 
 .content-container-chapter3 .content-li3 img{
   width: 340px;
-  top: 40px;
+  top: 50px;
   left: 50px;
   animation: rotation 14s linear infinite;
 }
@@ -522,24 +527,20 @@ h1.typewriter-animation {
   }
 }
 
-
-
 /*! ==============    4   =============== */
 
 .content-container-chapter3 .content-li4{
-  display: none;
   opacity: 0;
   overflow: visible;
 }
 
-
 .content-container-chapter3 .content-li4 p{
   left: 0px;
-  top: 110px;
+  top: 120px;
 }
 
 .content-container-chapter3 .content-li4 img{
   width: 460px;
-  top: -30px;
+  top: -20px;
   right: -65px;
 }
