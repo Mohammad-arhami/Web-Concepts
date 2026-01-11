@@ -102,3 +102,98 @@ window.addEventListener("scroll" , () => {
 
 
 
+// ! =========================================================
+
+const costom_ul = document.getElementsByClassName("costom-ul")[0];
+const costom_lis = Array.from(costom_ul.children);
+const content_container = document.getElementsByClassName("content-container-chapter3")[0];
+const contents = Array.from(content_container.children);
+
+
+
+function contentChanger(contents , index) {
+    contents.forEach((content) => {
+        if (content.classList.contains(`content-li${index + 1}`)) {
+            content.style.display = "flex";
+            content.style.opacity = "1";
+        }else{
+            content.style.display = "none";
+            content.style.opacity = "0";
+        }
+    })
+}
+
+
+
+costom_lis.forEach((li , index) => {
+    li.addEventListener("click", () => {
+        li.style.backgroundColor = "black";
+        li.style.color = "rgb(245, 245, 245)";
+        li.style.borderBottomRightRadius= "30%";
+
+        costom_lis.forEach((otherLI) => {
+            if ( otherLI !== li) {
+                otherLI.style.color = "black";
+                otherLI.style.backgroundColor = "rgb(245, 245, 245)";
+                otherLI.style.borderBottomRightRadius= "10px";
+            }
+        });
+
+        
+        if (index == 0) {
+            // contents.forEach((content) => {
+            //     if (content.classList.contains("content-li1")) {
+            //         content.style.display = "flex";
+            //         content.style.opacity = "1";
+            //     }else{
+            //         content.style.display = "none";
+            //         content.style.opacity = "0";
+            //     }
+            // })
+
+            contentChanger(contents , index);
+        }
+
+        if (index == 1) {
+            // contents.forEach((content) => {
+            //     if (content.classList.contains("content-li2")) {
+            //         content.style.display = "flex";
+            //         content.style.opacity = "1";
+            //     }else{
+            //         content.style.display = "none";
+            //         content.style.opacity = "0";
+            //     }
+            // })
+
+            contentChanger(contents , index);
+        }
+
+        if (index == 2) {
+            // contents.forEach((content) => {
+            //     if (content.classList.contains("content-li3")) {
+            //         content.style.display = "flex";
+            //         content.style.opacity = "1";
+            //     }else{
+            //         content.style.display = "none";
+            //         content.style.opacity = "0";
+            //     }
+            // })
+
+            contentChanger(contents , index);
+        }
+
+        if (index == 3) {
+            // contents.forEach((content) => {
+            //     if (content.classList.contains("content-li4")) {
+            //         content.style.display = "flex";
+            //         content.style.opacity = "1";
+            //     }else{
+            //         content.style.display = "none";
+            //         content.style.opacity = "0";
+            //     }
+            // })
+
+            contentChanger(contents , index);
+        }
+    })
+})
