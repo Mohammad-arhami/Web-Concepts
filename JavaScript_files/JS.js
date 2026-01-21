@@ -128,12 +128,14 @@ costom_lis.forEach((li , index) => {
         li.style.backgroundColor = "black";
         li.style.color = "rgb(245, 245, 245)";
         li.style.borderBottomRightRadius= "30%";
+        li.style.transform = "scale(1.1)";
 
         costom_lis.forEach((otherLI) => {
             if ( otherLI !== li) {
                 otherLI.style.color = "black";
                 otherLI.style.backgroundColor = "rgb(245, 245, 245)";
                 otherLI.style.borderBottomRightRadius= "10px";
+                otherLI.style.transform = "scale(1)";
             }
         });
 
