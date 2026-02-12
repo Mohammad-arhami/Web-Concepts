@@ -545,3 +545,89 @@ h1.typewriter-animation {
   top: -20px;
   right: -65px;
 }
+
+
+
+
+
+/*! ========================  chapter 4 advantages and disadvantages of js */
+
+
+.chapter-4-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: red;
+}
+
+
+.chapter-4-container .btns-container {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: green;
+}
+
+.btns-container button{
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  border: none;
+  outline: none;
+  padding: 25px 35px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: dodgerblue;
+
+}
+
+
+.btns-container button:hover{
+  animation: bounce 0.5s linear ;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.chapter-4-container .content-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+
+.content-container div{
+  width: 80%;
+  height: 100%;
+  background-color: yellow;
+}
+
+
+.content-container div.advantages-content{
+  display: none;
+}
