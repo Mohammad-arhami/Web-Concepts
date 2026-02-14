@@ -179,21 +179,18 @@
             <li>Browser compatibility. Different web browsers interpret JavaScript code slightly differently. Developers sometimes need to add extra code to keep websites working consistently across major browsers like Chrome, Firefox, and Safari.</li>
             <li>Security. Because the code runs on the user’s computer, attackers can exploit it for malicious purposes if developers don’t secure the application properly. For instance, cross-site scripting (XSS) attacks can run harmful code in a client’s browser when a website lacks proper safeguards.</li>
             <li>Debugging challenges. Sometimes, an error in JavaScript code fails silently, meaning the script stops working without showing an error message. This makes finding and fixing bugs more difficult compared to some server-side languages.</li>
-            <li> Unpredictable Type Coercion . JavaScript often automatically converts data types in unexpected ways, leading to strange and hard-to-find bugs. For example:</li>
-            <li>Browser Dependency & Limited System Access . JavaScript runs inside a browser sandbox and has no direct access to system resources like the file system, printers, serial ports, etc. While this is good for security, it makes it impossible to build desktop apps or system tools without additional technologies (Node.js, Electron, etc.).</li>
-
         </ul>
     </div> -->
 
     <div class="chapter-4-container">
         <div class="btns-container">
-            <button>advantages</button>
-            <button>disadvantages</button>
+            <button id="advantagesBtn">advantages</button>
+            <button id="disadvantagesBtn">diadvantages</button>
         </div>
         <div class="content-container">
             <div class="advantages-content">
                 <div class="content">
-                    <span><img src="../JavaScript_Images-file/Emoji/solved-black-puzzle-pieces-18235.svg" alt="" width="60%"></span>
+                    <span><img src="../JavaScript_Images-file/Emoji/solved-black-puzzle-pieces-18235.svg" alt="" width="70%"></span>
                     <h2>Simplicity</h2>
                     <p> JavaScript has a• relatively simple syntax inspired by languages like Java and C, making it one of the easiest programming languages for beginners to learnand read</p>
                 </div> 
@@ -203,7 +200,7 @@
                     <p>Since it runs on the client side, JavaScript can provide an immediate response to user actions without a round trip to the server. For instance, when you fill out a contact form and enter an invalid email address, the instant error message you see is JavaScript at work – no need to wait for the page to reload</p>
                 </div> 
                 <div class="content">
-                    <span><img src="../JavaScript_Images-file/Emoji/setting-13810.svg" alt="" width="80%"></span>
+                    <span><img src="../JavaScript_Images-file/Emoji/setting-13810.svg" alt="" width="100%"></span>
                     <h2>Versatility</h2>
                     <p> Originally designed for front-end development, JavaScript is now used everywhere. It can power back-end servers with Node.js, create mobile apps for iOS and Android with frameworks like React Native, and even build desktop applications with Electron</p>
                 </div> 
@@ -218,12 +215,44 @@
                     <p>By handling tasks in the browser, JavaScript reduces the work your server has to do. The same form validation example applies here: the user’s browser checks for errors first, so the server only processes valid submissions, saving significant resources</p>
                 </div> 
                 <div class="content">
-                    <span><img src="../JavaScript_Images-file/Emoji/cooling-symbol-3318.svg" alt="" width="90%"></span>
+                    <span><img src="../JavaScript_Images-file/Emoji/cooling-symbol-3318.svg" alt="" width="100%"></span>
                     <h2>Constant updates</h2>
                     <p>ECMA International updates ECMAScript regularly.ES16 added new Set methods.These include Set.intersection, Set.difference, and Set.symmetricDifference.They let developers compare sets quickly. They also help handle unique data more efficiently.</p>
                 </div> 
             </div>
-            <div class="disadvantages-content"></div>
+    
+            <div class="disadvantages-content">
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/web-search-4291.svg" alt="" width="90%"></span>
+                    <h2>Browser compatibility</h2>
+                    <p> Different web browsers interpret JavaScript code slightly differently. Developers sometimes need to add extra code to keep websites working consistently across major browsers like Chrome, Firefox, and Safari</p>
+                </div> 
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/swords-and-shield-25900.svg" alt="" width="100%"></span>
+                    <h2>Security</h2>
+                    <p>Because the code runs on the user’s computer, attackers can exploit it for malicious purposes if developers don’t secure the application properly. For instance, cross-site scripting (XSS) attacks can run harmful code in a client’s browser when a website lacks proper safeguards</p>
+                </div> 
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/red-bug-security-warning-24706.svg" alt="" width="100%"></span>
+                    <h2>Debugging challenges</h2>
+                    <p> Sometimes, an error in JavaScript code fails silently, meaning the script stops working without showing an error message. This makes finding and fixing bugs more difficult compared to some server-side languages</p>
+                </div>
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/exchange-arrows-2832.svg" alt="" width="100%"></span>
+                    <h2>Unpredictable Type Coercion</h2>
+                    <p>JavaScript automatically converts data types in unexpected ways during operations, leading to hidden bugs that are difficult to trace. Code that appears correct can produce strange results because the language silently changes data types behind the scenes</p>
+                </div> 
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/efficiency-growth-and-productivity-24838.svg" alt="" width="100%"></span>
+                    <h2>Single-threaded & Performance Issues with Heavy Tasks</h2>
+                    <p>JavaScript runs on a single thread in the browser. If a heavy function or long loop executes, it blocks the entire page, making it unresponsive. Although Web Workers provide a workaround, managing concurrency is still more challenging compared to multi-threaded languages</p>
+                </div>
+                <div class="content">
+                    <span><img src="../JavaScript_Images-file/Emoji/disadvantages/password-11941.svg" alt="" width="100%"></span>
+                    <h2>Browser Dependency & Limited System Access</h2>
+                    <p>JavaScript runs inside a browser sandbox and has no direct access to system resources like the file system, printers, serial ports, etc. While this is good for security, it makes it impossible to build desktop apps or system tools without additional technologies (Node.js, Electron, etc.)</p>
+                </div>
+            </div>
         </div>
     </div>
 

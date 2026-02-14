@@ -197,3 +197,44 @@ costom_lis.forEach((li , index) => {
         }
     })
 })
+
+
+
+
+
+
+
+
+// ! ==============================================================================
+// ! ==============================================================================
+// ! ======================  Advantages % disadvantages  ==========================
+
+const advantagesBtn = document.getElementById("advantagesBtn");
+const disadvantagesBtn = document.getElementById("disadvantagesBtn");
+const advantagesContent = document.getElementsByClassName("advantages-content")[0];
+const disadvantagesContent = document.getElementsByClassName("disadvantages-content")[0];
+
+
+advantagesBtn.addEventListener("click" , () => {
+
+    advantagesBtn.style.backgroundColor = "black";
+    disadvantagesBtn.style.backgroundColor = "transparent";
+
+    advantagesContent.style.display = "flex";
+    advantagesContent.style.opacity = "1";
+    disadvantagesContent.style.display = "none";
+    disadvantagesContent.style.opacity = "0";
+    
+})
+
+disadvantagesBtn.addEventListener("click" , () => {
+
+    disadvantagesBtn.style.backgroundColor = "black";
+    advantagesBtn.style.backgroundColor = "transparent";
+
+    disadvantagesContent.style.display = "flex";
+    disadvantagesContent.style.opacity = "1";
+    advantagesContent.style.display = "none";
+    advantagesContent.style.opacity = "0";
+    
+})

@@ -585,6 +585,7 @@ h1.typewriter-animation {
   padding: 20px ;
   border-radius: 12px;
   cursor: pointer;
+  transition: all 0.1s;
   background-color: rgba(63, 63, 63, 0);
 }
 
@@ -638,6 +639,14 @@ h1.typewriter-animation {
   padding: 10px 0;
 }
 
+/* ! ====================  disadvantages content */
+.content-container div.advantages-content{
+  display: flex;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+
 
 .content-container div .content{
   width: 46%;
@@ -683,6 +692,57 @@ h1.typewriter-animation {
 }
 
 
+
+/*! ========================  disadvantages content */
 .content-container div.disadvantages-content{
   display: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+
+.content-container div.disadvantages-content .content span{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.content-container div.disadvantages-content .content h2{
+  margin-top: 20px;
+  margin-left: 75px;
+}
+
+
+.content-container div.disadvantages-content .content p{
+  margin-top: 25px;
+}
+
+.content-container div.disadvantages-content .content:nth-of-type(2) p{
+  margin-top: 20px;
+}
+
+
+.content-container div.disadvantages-content .content:nth-of-type(5) h2{
+  margin-top: 3px;
+}
+
+.content-container div.disadvantages-content .content:nth-of-type(5) p{
+  margin-top: 3px;
+}
+
+
+.content-container div.disadvantages-content .content:nth-of-type(6) h2{
+  margin-top: 2px;
+}
+
+.content-container div.disadvantages-content .content:nth-of-type(6) p{
+  margin-top: 4px;
 }
