@@ -555,7 +555,7 @@ h1.typewriter-animation {
 
 .chapter-4-container {
   width: 100%;
-  height: 830px;
+  height: 940px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -639,13 +639,19 @@ h1.typewriter-animation {
   padding: 10px 0;
 }
 
-/* ! ====================  disadvantages content */
+/* ! ====================  advantages content */
 .content-container div.advantages-content{
   display: flex;
   opacity: 1;
   transition: 0.3s;
 }
 
+.content-container div.advantages-content p.explane {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  margin-top: 5px;
+}
 
 
 .content-container div .content{
@@ -700,6 +706,12 @@ h1.typewriter-animation {
   transition: 0.3s;
 }
 
+.content-container div.disadvantages-content p.explane {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  margin-top: 5px;
+}
 
 .content-container div.disadvantages-content .content span{
   width: 60px;
