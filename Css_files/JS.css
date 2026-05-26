@@ -640,6 +640,7 @@ h1.typewriter-animation {
 }
 
 /* ! ====================  advantages content */
+
 .content-container div.advantages-content{
   display: flex;
   opacity: 1;
@@ -757,4 +758,128 @@ h1.typewriter-animation {
 
 .content-container div.disadvantages-content .content:nth-of-type(6) p{
   margin-top: 4px;
+}
+
+
+/*! ========================  chapter 5 js used for */
+
+.chapter-5-container {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  padding-left: 115px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+}
+
+
+.chapter-5-container h1{
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.chapter-5-container p{
+  color: black;
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.chapter-5-container .content-container-chapter5{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  padding-left: 0px;
+  padding-top: 30px;
+}
+
+
+.content-container-chapter5 .accordion-item {
+  width: 85%;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.content-container-chapter5 .accordion-item:nth-of-type(1) { background: linear-gradient(135deg, #b100ab 0%, #ff258a 100%); }
+.content-container-chapter5 .accordion-item:nth-of-type(2) { background: linear-gradient(135deg, #00709c 0%, #00c2e0 100%); }
+.content-container-chapter5 .accordion-item:nth-of-type(3) { background: linear-gradient(135deg, #530083 0%, #b908ff 100%); }
+.content-container-chapter5 .accordion-item:nth-of-type(4) { background: linear-gradient(135deg, #008165 0%, #00ca9e 100%); }
+
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 30px  40px 70px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.accordion-header:hover {
+  background: rgba(15, 15, 15, 0.1);
+}
+
+
+.accordion-header .icon {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 90px;
+}
+
+.accordion-item:nth-of-type(2) .accordion-header .icon {
+  top: 8px;
+  left: 21px;
+}
+
+.accordion-item:nth-of-type(3) .accordion-header .icon {
+  top: 5px;
+  left: 23px;
+}
+
+.accordion-item:nth-of-type(4) .accordion-header .icon {
+  top: 14px;
+  left: 26px;
+  width: 85px;
+}
+
+.accordion-header h3 {
+  flex: 1;
+  font-size: 21px;
+  margin-left: 40px;
+  color: rgb(245, 245, 245);
+}
+
+.accordion-header .arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+  color: rgb(255, 255, 255);
+}
+
+.accordion-content {
+  height: 0;
+  padding: 0 55px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: rgb(248, 248, 248);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.accordion-item.active .accordion-content {
+  height: 150px;
+  padding: 0 40px;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(90deg);
 }

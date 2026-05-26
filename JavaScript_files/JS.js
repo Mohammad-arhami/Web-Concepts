@@ -200,13 +200,6 @@ costom_lis.forEach((li , index) => {
 
 
 
-
-
-
-
-
-// ! ==============================================================================
-// ! ==============================================================================
 // ! ======================  Advantages % disadvantages  ==========================
 
 const advantagesBtn = document.getElementById("advantagesBtn");
@@ -238,3 +231,15 @@ disadvantagesBtn.addEventListener("click" , () => {
     advantagesContent.style.opacity = "0";
     
 })
+
+
+
+
+// ! ===================  Chapter 5 Accordion  ========================
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+    });
+});
