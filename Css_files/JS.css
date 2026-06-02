@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "biyekan";
-  src: url(../Font_files/transfonter.org-20230716-122746/BYekan.eot)
+  src:
+    url(../Font_files/transfonter.org-20230716-122746/BYekan.eot)
       format("embedded-opentype"),
     url(../Font_files/transfonter.org-20230716-122746/BYekan.ttf)
       format("truetype"),
@@ -93,14 +94,14 @@ body {
 }
 
 .nav-container ul li a {
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    transition: all 0.3s;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .nav-container ul li a:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .nav-container .icon-container {
@@ -121,51 +122,18 @@ body {
   border: none;
   background-color: transparent;
 }
-.nav-container .icon-container button img{
+.nav-container .icon-container button img {
   transform: scaleX(-1);
 }
 
-.nav-container .icon-container button span{
+.nav-container .icon-container button span {
   margin-top: 5px;
   color: rgb(0, 0, 0);
 }
 
-
-/*! previous concept */
-/* 
-.container{
-  width: 45%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: auto;
-}
-
-.container h1{
-    font-size: 47px;
-    margin-top: 110px;
-}
-
-.container p{
-    font-size: 16px;
-    margin-top: 30px;
-    text-align: center;
-    line-height: 26px;
-}
-
-.container h2{
-    font-size: 28px;
-    margin-top: 30px;
-} */
-
-
-
-
 /*! ================== chapter 1 Introduction */
 
-.chapter-1-container{
+.chapter-1-container {
   width: 100%;
   height: 570px;
   display: flex;
@@ -174,19 +142,17 @@ body {
   align-items: center;
 }
 
-
-.chapter-1-container h1{
+.chapter-1-container h1 {
   font-size: 130px;
   color: black;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.chapter-1-container h1 b{
+.chapter-1-container h1 b {
   color: black;
   background-color: rgb(255, 255, 0);
 }
-
 
 /* Cursor */
 h1.cursor {
@@ -197,8 +163,9 @@ h1.cursor {
 
 /* Animation */
 h1.typewriter-animation {
-  animation: typewriter 5s steps(40) 1s 1 normal both,
-  blinkingCursor 700ms steps(50) infinite normal;
+  animation:
+    typewriter 5s steps(40) 1s 1 normal both,
+    blinkingCursor 700ms steps(50) infinite normal;
 }
 
 @keyframes typewriter {
@@ -219,8 +186,7 @@ h1.typewriter-animation {
   }
 }
 
-
-.chapter-1-container p{
+.chapter-1-container p {
   width: 880px;
   font-size: 19px;
   color: rgb(17, 17, 17);
@@ -229,11 +195,11 @@ h1.typewriter-animation {
   margin-bottom: 10px;
 }
 
-.chapter-1-container p:last-child{
+.chapter-1-container p:last-child {
   width: 1100px;
 }
 
-.chapter-1-container img{
+.chapter-1-container img {
   width: 350px;
   position: absolute;
   top: 750px;
@@ -243,8 +209,6 @@ h1.typewriter-animation {
   transition: 0.5s;
   transition-delay: 0.5s;
 }
-
-
 
 /*! ========================  chapter 2 syntax */
 
@@ -258,46 +222,41 @@ h1.typewriter-animation {
   padding-left: 115px;
 }
 
-
-.chapter-2-container h1{
+.chapter-2-container h1 {
   font-size: 45px;
   margin-top: 110px;
 }
 
-.chapter-2-container .text-container-chapter2{
+.chapter-2-container .text-container-chapter2 {
   width: 87%;
-  height:100%;
+  height: 100%;
   margin-top: 30px;
   /* background-color: red; */
 }
 
-
-.text-container-chapter2 p{
+.text-container-chapter2 p {
   color: black;
   font-size: 18px;
   margin-left: 5px;
   margin-bottom: 30px;
 }
 
-.text-container-chapter2 ul{
+.text-container-chapter2 ul {
   margin-left: 50px;
 }
 
-.text-container-chapter2 ul li{
+.text-container-chapter2 ul li {
   margin: 10px 0;
   text-align: justify;
 }
 
-
-.text-container-chapter2 p:nth-of-type(2){
+.text-container-chapter2 p:nth-of-type(2) {
   font-size: 20px;
   margin-top: 50px;
   font-weight: 800;
 }
 
-
-
-.text-container-chapter2 .class-explanation:nth-of-type(1){
+.text-container-chapter2 .class-explanation:nth-of-type(1) {
   width: 98%;
   height: 165px;
   font-style: italic;
@@ -309,12 +268,12 @@ h1.typewriter-animation {
   background-color: rgb(212, 212, 212);
 }
 
-.text-container-chapter2 p:nth-of-type(3){
+.text-container-chapter2 p:nth-of-type(3) {
   font-size: 18px;
   margin-top: 40px;
 }
 
-.text-container-chapter2 .class-explanation:nth-of-type(2){
+.text-container-chapter2 .class-explanation:nth-of-type(2) {
   width: 98%;
   height: 445px;
   font-style: italic;
@@ -326,18 +285,14 @@ h1.typewriter-animation {
   background-color: rgb(212, 212, 212);
 }
 
-.text-container-chapter2 .class-explanation .blue{
+.text-container-chapter2 .class-explanation .blue {
   color: rgb(0, 60, 255);
 }
 
-
-.text-container-chapter2 p:nth-of-type(4){
+.text-container-chapter2 p:nth-of-type(4) {
   font-size: 18px;
   margin-top: 40px;
 }
-
-
-
 
 /*! ========================  chapter 3 Key features of js */
 
@@ -351,14 +306,12 @@ h1.typewriter-animation {
   padding-left: 115px;
 }
 
-
-.chapter-3-container h1{
+.chapter-3-container h1 {
   font-size: 80px;
   margin-top: 50px;
 }
 
-
-.chapter-3-container p{
+.chapter-3-container p {
   color: black;
   font-size: 18px;
   margin-left: 5px;
@@ -374,8 +327,7 @@ h1.typewriter-animation {
   text-align: justify;
 } */
 
-
-.chapter-3-container .costom-container{
+.chapter-3-container .costom-container {
   width: 100%;
   height: 550px;
   display: flex;
@@ -383,8 +335,7 @@ h1.typewriter-animation {
   align-items: flex-start;
 }
 
-
-.list-container-chapter3{
+.list-container-chapter3 {
   width: 190px;
   height: 420px;
   display: flex;
@@ -396,7 +347,7 @@ h1.typewriter-animation {
   margin-top: 20px;
 }
 
-.list-container-chapter3 ul li{
+.list-container-chapter3 ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,17 +363,14 @@ h1.typewriter-animation {
   transition: all 0.6s;
 }
 
-
-.list-container-chapter3 ul li:nth-of-type(1){
+.list-container-chapter3 ul li:nth-of-type(1) {
   color: rgb(245, 245, 245);
   background-color: black;
   border-bottom-right-radius: 30%;
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
-
-
-.content-container-chapter3{
+.content-container-chapter3 {
   width: 800px;
   height: 100%;
   display: flex;
@@ -433,8 +381,7 @@ h1.typewriter-animation {
   position: relative;
 }
 
-
-.content-container-chapter3 .content{
+.content-container-chapter3 .content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -447,7 +394,7 @@ h1.typewriter-animation {
   overflow: hidden;
 }
 
-.content-container-chapter3 .content p{
+.content-container-chapter3 .content p {
   font-size: 19px;
   font-weight: 600;
   line-height: 28px;
@@ -456,27 +403,26 @@ h1.typewriter-animation {
   position: absolute;
 }
 
-.content-container-chapter3 .content img{
+.content-container-chapter3 .content img {
   position: absolute;
   z-index: 1;
 }
 
 /*! ============     1    ================= */
 
-.content-container-chapter3 .content-li1{
+.content-container-chapter3 .content-li1 {
   display: flex;
   opacity: 1;
   justify-content: flex-start;
   padding: 25px 15px;
 }
 
-.content-container-chapter3 .content-li1 p{
+.content-container-chapter3 .content-li1 p {
   top: 35px;
   left: 10px;
 }
 
-
-.content-container-chapter3 .content-li1 img{
+.content-container-chapter3 .content-li1 img {
   width: 900px;
   top: 55px;
   left: 35px;
@@ -484,17 +430,17 @@ h1.typewriter-animation {
 
 /*! ================   2   =============== */
 
-.content-container-chapter3 .content-li2{
+.content-container-chapter3 .content-li2 {
   opacity: 0;
   overflow: visible;
 }
 
-.content-container-chapter3 .content-li2 p{
+.content-container-chapter3 .content-li2 p {
   left: -5px;
   bottom: 60px;
 }
 
-.content-container-chapter3 .content-li2 img{
+.content-container-chapter3 .content-li2 img {
   width: 470px;
   top: -40px;
   right: 10px;
@@ -503,16 +449,16 @@ h1.typewriter-animation {
 
 /*! ==============    3    =============== */
 
-.content-container-chapter3 .content-li3{
+.content-container-chapter3 .content-li3 {
   opacity: 0;
 }
 
-.content-container-chapter3 .content-li3 p{
+.content-container-chapter3 .content-li3 p {
   right: 10px;
   bottom: 50px;
 }
 
-.content-container-chapter3 .content-li3 img{
+.content-container-chapter3 .content-li3 img {
   width: 340px;
   top: 50px;
   left: 50px;
@@ -530,39 +476,33 @@ h1.typewriter-animation {
 
 /*! ==============    4   =============== */
 
-.content-container-chapter3 .content-li4{
+.content-container-chapter3 .content-li4 {
   opacity: 0;
   overflow: visible;
 }
 
-.content-container-chapter3 .content-li4 p{
+.content-container-chapter3 .content-li4 p {
   left: 0px;
   top: 120px;
 }
 
-.content-container-chapter3 .content-li4 img{
+.content-container-chapter3 .content-li4 img {
   width: 460px;
   top: -20px;
   right: -65px;
 }
 
-
-
-
-
 /*! ========================  chapter 4 advantages and disadvantages of js */
-
 
 .chapter-4-container {
   width: 100%;
   height: 940px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 150px;
 }
-
 
 .chapter-4-container .btns-container {
   width: 34.3%;
@@ -575,24 +515,23 @@ h1.typewriter-animation {
   background-color: rgb(163, 163, 163);
 }
 
-.btns-container button{
+.btns-container button {
   width: 230px;
   color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: 700;
   border: none;
   outline: none;
-  padding: 20px ;
+  padding: 20px;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.1s;
   background-color: rgba(63, 63, 63, 0);
 }
 
-.btns-container button:nth-child(1){
+.btns-container button:nth-child(1) {
   background-color: rgb(0, 0, 0);
 }
-
 
 /* .btns-container button:hover{
   animation: bounce 0.5s linear ;
@@ -616,8 +555,6 @@ h1.typewriter-animation {
   }
 } */
 
-
-
 .chapter-4-container .content-container {
   width: 100%;
   height: 85%;
@@ -627,8 +564,7 @@ h1.typewriter-animation {
   margin-top: 20px;
 }
 
-
-.content-container div{
+.content-container div {
   width: 85%;
   height: 100%;
   display: flex;
@@ -641,7 +577,7 @@ h1.typewriter-animation {
 
 /* ! ====================  advantages content */
 
-.content-container div.advantages-content{
+.content-container div.advantages-content {
   display: flex;
   opacity: 1;
   transition: 0.3s;
@@ -654,8 +590,7 @@ h1.typewriter-animation {
   margin-top: 5px;
 }
 
-
-.content-container div .content{
+.content-container div .content {
   width: 46%;
   height: 210px;
   display: flex;
@@ -668,7 +603,7 @@ h1.typewriter-animation {
   background-color: rgb(214, 214, 214);
 }
 
-.content-container div.advantages-content .content span{
+.content-container div.advantages-content .content span {
   width: 60px;
   height: 60px;
   display: flex;
@@ -681,27 +616,25 @@ h1.typewriter-animation {
   background-color: rgb(0, 0, 0);
 }
 
-.content-container div.advantages-content .content h2{
+.content-container div.advantages-content .content h2 {
   margin-top: 20px;
   margin-left: 75px;
 }
 
-.content-container div.advantages-content .content p{
+.content-container div.advantages-content .content p {
   margin-top: 25px;
 }
 
-.content-container div.advantages-content .content:nth-of-type(2) p{
+.content-container div.advantages-content .content:nth-of-type(2) p {
   margin-top: 20px;
 }
 
-.content-container div.advantages-content .content:nth-of-type(4) p{
+.content-container div.advantages-content .content:nth-of-type(4) p {
   margin-top: 20px;
 }
-
-
 
 /*! ========================  disadvantages content */
-.content-container div.disadvantages-content{
+.content-container div.disadvantages-content {
   display: none;
   opacity: 1;
   transition: 0.3s;
@@ -714,7 +647,7 @@ h1.typewriter-animation {
   margin-top: 5px;
 }
 
-.content-container div.disadvantages-content .content span{
+.content-container div.disadvantages-content .content span {
   width: 60px;
   height: 60px;
   display: flex;
@@ -727,39 +660,34 @@ h1.typewriter-animation {
   background-color: rgb(0, 0, 0);
 }
 
-
-.content-container div.disadvantages-content .content h2{
+.content-container div.disadvantages-content .content h2 {
   margin-top: 20px;
   margin-left: 75px;
 }
 
-
-.content-container div.disadvantages-content .content p{
+.content-container div.disadvantages-content .content p {
   margin-top: 25px;
 }
 
-.content-container div.disadvantages-content .content:nth-of-type(2) p{
+.content-container div.disadvantages-content .content:nth-of-type(2) p {
   margin-top: 20px;
 }
 
-
-.content-container div.disadvantages-content .content:nth-of-type(5) h2{
+.content-container div.disadvantages-content .content:nth-of-type(5) h2 {
   margin-top: 3px;
 }
 
-.content-container div.disadvantages-content .content:nth-of-type(5) p{
+.content-container div.disadvantages-content .content:nth-of-type(5) p {
   margin-top: 3px;
 }
 
-
-.content-container div.disadvantages-content .content:nth-of-type(6) h2{
+.content-container div.disadvantages-content .content:nth-of-type(6) h2 {
   margin-top: 2px;
 }
 
-.content-container div.disadvantages-content .content:nth-of-type(6) p{
+.content-container div.disadvantages-content .content:nth-of-type(6) p {
   margin-top: 4px;
 }
-
 
 /*! ========================  chapter 5 js used for */
 
@@ -768,35 +696,33 @@ h1.typewriter-animation {
   min-height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-left: 115px;
   padding-bottom: 30px;
   margin-top: 50px;
 }
 
-
-.chapter-5-container h1{
+.chapter-5-container h1 {
   font-size: 60px;
   margin-top: 50px;
 }
 
-.chapter-5-container p{
+.chapter-5-container p {
   color: black;
   font-size: 19px;
   margin: 20px 0;
 }
 
-.chapter-5-container .content-container-chapter5{
+.chapter-5-container .content-container-chapter5 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-left: 0px;
   padding-top: 30px;
 }
-
 
 .content-container-chapter5 .accordion-item {
   width: 85%;
@@ -808,17 +734,24 @@ h1.typewriter-animation {
   background-color: rgb(0, 0, 0);
 }
 
-.content-container-chapter5 .accordion-item:nth-of-type(1) { background: linear-gradient(135deg, #b100ab 0%, #ff258a 100%); }
-.content-container-chapter5 .accordion-item:nth-of-type(2) { background: linear-gradient(135deg, #00709c 0%, #00c2e0 100%); }
-.content-container-chapter5 .accordion-item:nth-of-type(3) { background: linear-gradient(135deg, #530083 0%, #b908ff 100%); }
-.content-container-chapter5 .accordion-item:nth-of-type(4) { background: linear-gradient(135deg, #008165 0%, #00ca9e 100%); }
-
+.content-container-chapter5 .accordion-item:nth-of-type(1) {
+  background: linear-gradient(135deg, #b100ab 0%, #ff258a 100%);
+}
+.content-container-chapter5 .accordion-item:nth-of-type(2) {
+  background: linear-gradient(135deg, #00709c 0%, #00c2e0 100%);
+}
+.content-container-chapter5 .accordion-item:nth-of-type(3) {
+  background: linear-gradient(135deg, #530083 0%, #b908ff 100%);
+}
+.content-container-chapter5 .accordion-item:nth-of-type(4) {
+  background: linear-gradient(135deg, #008165 0%, #00ca9e 100%);
+}
 
 .accordion-header {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 40px 30px  40px 70px;
+  padding: 40px 30px 40px 70px;
   cursor: pointer;
   position: relative;
   transition: background 0.2s;
@@ -827,7 +760,6 @@ h1.typewriter-animation {
 .accordion-header:hover {
   background: rgba(15, 15, 15, 0.1);
 }
-
 
 .accordion-header .icon {
   position: absolute;
@@ -882,4 +814,190 @@ h1.typewriter-animation {
 
 .accordion-item.active .arrow {
   transform: rotate(90deg);
+}
+
+/*! ========================  chapter 6 js popular frameworks */
+
+.chapter-6-container {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 115px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+}
+
+.chapter-6-container h1 {
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.chapter-6-container p:first-child {
+  color: black;
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.chapter-6-container .content-container-chapter6 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/*! ====================== Tab Navigation */
+.content-container-chapter6 .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.tab-btn {
+  background: #f1f1f1;
+  border: 2px solid;
+  padding: 10px 26px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.411);
+}
+
+.tab-btn:hover {
+  transform: scale(1.03);
+}
+
+.tab-btn:nth-of-type(1){ border-color: #2196F3; }
+.tab-btn:nth-of-type(2){ border-color: #EE0B65; }
+.tab-btn:nth-of-type(3){ border-color: #42B883; }
+.tab-btn:nth-of-type(4){ border-color: #85D228; }
+.tab-btn:nth-of-type(5){ border-color: #1266A9; }
+
+
+/* ! ============================== Tab Content */
+
+.content-container-chapter6 .tab-content {
+  display: none;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  background: rgb(238, 238, 238);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #eef2f6;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.content-container-chapter6 .tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content .framework-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.detail-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: 100;
+  text-align: center;
+}
+
+.content-container-chapter6 .tab-content:nth-of-type(5) .detail-icon{
+  bottom: 50px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-info h2 {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.detail-info .creator {
+  color: #ffffff;
+  font-size: 15px;
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #00000060;
+}
+
+.detail-info p {
+  width: 85%;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 16px;
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  color: #ffffff;
+  background: #000000;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #e9e9e9;
+}
+
+.detail-info .tech-badge {
+  display: inline-block;
+  background: transparent;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  margin-right: 0.5rem;
+  margin-top: 20px;
 }

@@ -243,3 +243,44 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         item.classList.toggle('active');
     });
 });
+
+
+// ! ===================  Chapter 6 Tab Button  ========================
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+
+        document.querySelectorAll('.tab-btn').forEach(otherBtn => {
+            if (otherBtn === btn) {
+                switch (tabId) {
+                    case 'react':
+                        btn.style.color = "#ffffff"
+                        btn.style.backgroundColor = "#2196F3";
+                        break;
+                    case 'angular':
+                        btn.style.color = "#ffffff"
+                        btn.style.backgroundColor = "#EE0B65";
+                        break;
+                    case 'vue':
+                        btn.style.color = "#ffffff"
+                        btn.style.backgroundColor = "#42B883";
+                        break;
+                    case 'node':
+                        btn.style.color = "#ffffff"
+                        btn.style.backgroundColor = "#85D228";
+                        break;
+                    default:
+                        btn.style.color = "#ffffff"
+                        btn.style.backgroundColor = "#1266A9";
+                }
+            }else{
+                otherBtn.style.color ="black";
+                otherBtn.style.backgroundColor ="transparent";
+            }
+        })
+    });
+});
