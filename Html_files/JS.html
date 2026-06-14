@@ -411,6 +411,138 @@
     </div>
 
 
+    <div class="chapter-7-container">
+        <h1>How can you start using JavaScript <br> on your website?</h1>
+        <p>Now that you understand what JavaScript is, the next logical step is to put that knowledge into practice. <br> The way you add JavaScript to a website depends on the platform you're using.</p>
+        <p>We have two guides to help you get started:</p>
+        <div class="content-container-chapter7">
+
+        <div class="split-container">
+                
+                <!-- LEFT COLUMN: WordPress Users -->
+                <div class="card-column">
+                    <div class="column-header wordpress">
+                        <div class="column-icon">
+                            <img src="../JavaScript_Images-file/3d-wordpress-blue-logo-16305.svg" alt="" width="80px">
+                        </div>
+                        <h3>WordPress Users</h3>
+                        <p>Add JavaScript without breaking your theme</p>
+                    </div>
+                    <div class="column-content">
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-text">
+                                    <strong>Method 1: Use a Plugin</strong>
+                                    <span>Install "Custom CSS & JS" or "Insert Headers and Footers" plugin — paste your script safely.</span>
+                                </div>
+                            </li>
+                            <li class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-text">
+                                    <strong>Method 2: functions.php (Theme Developer)</strong>
+                                    <span>Add code to your child theme's functions.php file.</span>
+                                </div>
+                            </li>
+                            <li class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-text">
+                                    <strong>Method 3: Gutenberg Block</strong>
+                                    <span>Use "Custom HTML" block and add your &lt;script&gt; tag directly.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="code-block">
+                            <div class="copy-tag">functions.php</div>
+                            <pre>function add_custom_js() {
+    wp_enqueue_script(
+        'custom-script',
+        get_stylesheet_directory_uri() . '/js/script.js',
+        array(),
+        '1.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'add_custom_js');</pre>
+                        </div>
+
+                        <div class="badge-list">
+                            <span class="badge">✅ Beginner-friendly</span>
+                            <span class="badge">✅ Plugin method safe</span>
+                            <span class="badge">⚠️ Use child theme</span>
+                        </div>
+
+                        <button class="btn-demo" onclick="alert('📝 WordPress tip: Always use a child theme for custom code!')">💡 Get WordPress Tip</button>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Static Websites -->
+                <div class="card-column">
+                    <div class="column-header static">
+                        <div class="column-icon">
+                            <img src="../JavaScript_Images-file/globe-12149.svg" alt="" width="80px" style="margin-right: 20px;">
+                            <img src="../JavaScript_Images-file/post-it-notes-22345.svg" alt="" width="80px">
+                        </div>
+                        <h3>Static Websites</h3>
+                        <p>HTML / CSS / JS — full control</p>
+                    </div>
+                    <div class="column-content">
+                        <ul class="step-list">
+                            <li class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-text">
+                                    <strong>Inline JavaScript</strong>
+                                    <span>Add directly inside your HTML file using &lt;script&gt; tags.</span>
+                                </div>
+                            </li>
+                            <li class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-text">
+                                    <strong>External JavaScript File</strong>
+                                    <span>Create a .js file and link it — cleaner and reusable.</span>
+                                </div>
+                            </li>
+                            <li class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-text">
+                                    <strong>Defer & Async</strong>
+                                    <span>Optimize loading with 'defer' or 'async' attributes.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="code-block">
+                            <div class="copy-tag">index.html</div>
+                            <pre>&lt;!-- Inline example --&gt;
+&lt;script&gt;
+    console.log("Hello from JS!");
+&lt;/script&gt;
+
+&lt;!-- External file (recommended) --&gt;
+&lt;script src="js/script.js" defer&gt;&lt;/script&gt;</pre>
+                        </div>
+
+                        <div class="badge-list">
+                            <span class="badge">✅ Full control</span>
+                            <span class="badge">✅ No plugins</span>
+                            <span class="badge">⚡ Defer for speed</span>
+                        </div>
+
+                        <button class="btn-demo" onclick="alert('💻 Try adding console.log(\'Hello\') to your static site right now!')">🧪 Try a Live Example</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
     <script src="../JavaScript_files/JS.js"></script>
 
 </body>
